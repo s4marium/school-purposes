@@ -1,0 +1,22 @@
+[
+  {
+    "Id": 1,
+    "Name": "Barangay Clearance Certificate",
+    "Type": "BarangayClearance",
+    "Template": "\r\n                <!DOCTYPE html>\r\n                <html>\r\n                <head>\r\n                    <style>\r\n                        body { font-family: Arial, sans-serif; margin: 40px; }\r\n                        .header { text-align: center; margin-bottom: 30px; }\r\n                        .title { font-size: 24px; font-weight: bold; color: #2c5530; }\r\n                        .content { margin: 20px 0; line-height: 1.6; }\r\n                        .signature { margin-top: 50px; text-align: right; }\r\n                    </style>\r\n                </head>\r\n                <body>\r\n                    <div class='header'>\r\n                        <h1 class='title'>BARANGAY CLEARANCE</h1>\r\n                        <p>Certificate No: {{CertificateNumber}}</p>\r\n                    </div>\r\n                    <div class='content'>\r\n                        <p>TO WHOM IT MAY CONCERN:</p>\r\n                        <p>This is to certify that <strong>{{ResidentName}}</strong>, of legal age, residing at {{Address}}, is a bonafide resident of this barangay.</p>\r\n                        <p>This certification is issued upon the request of the above-mentioned person for {{Purpose}} and for whatever legal purpose it may serve.</p>\r\n                        <p>Issued this {{Date}}.</p>\r\n                    </div>\r\n                    <div class='signature'>\r\n                        <p><strong>{{Captain}}</strong></p>\r\n                        <p>Barangay Captain</p>\r\n                    </div>\r\n                </body>\r\n                </html>",
+    "Variables": "{\"ResidentName\":\"\",\"Address\":\"\",\"Purpose\":\"\",\"Date\":\"\",\"CertificateNumber\":\"\",\"Captain\":\"\"}",
+    "IsDefault": true,
+    "CreatedDate": "2025-10-22T03:30:38.0996251+08:00",
+    "CreatedBy": 1
+  },
+  {
+    "Id": 2,
+    "Name": "Certificate of Residency",
+    "Type": "Residency",
+    "Template": "\r\n                <!DOCTYPE html>\r\n                <html>\r\n                <head>\r\n                    <style>\r\n                        body { font-family: Arial, sans-serif; margin: 40px; }\r\n                        .header { text-align: center; margin-bottom: 30px; }\r\n                        .title { font-size: 24px; font-weight: bold; color: #2c5530; }\r\n                        .content { margin: 20px 0; line-height: 1.6; }\r\n                        .signature { margin-top: 50px; text-align: right; }\r\n                    </style>\r\n                </head>\r\n                <body>\r\n                    <div class='header'>\r\n                        <h1 class='title'>CERTIFICATE OF RESIDENCY</h1>\r\n                        <p>Certificate No: {{CertificateNumber}}</p>\r\n                    </div>\r\n                    <div class='content'>\r\n                        <p>TO WHOM IT MAY CONCERN:</p>\r\n                        <p>This is to certify that <strong>{{ResidentName}}</strong> has been a resident of {{Address}} for {{Years}} years.</p>\r\n                        <p>This certification is issued upon request of the above-mentioned person for whatever legal purpose it may serve.</p>\r\n                        <p>Issued this {{Date}}.</p>\r\n                    </div>\r\n                    <div class='signature'>\r\n                        <p><strong>{{Captain}}</strong></p>\r\n                        <p>Barangay Captain</p>\r\n                    </div>\r\n                </body>\r\n                </html>",
+    "Variables": "{\"ResidentName\":\"\",\"Address\":\"\",\"Years\":\"\",\"Date\":\"\",\"CertificateNumber\":\"\",\"Captain\":\"\"}",
+    "IsDefault": true,
+    "CreatedDate": "2025-10-22T03:30:38.1011627+08:00",
+    "CreatedBy": 1
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "Id": 1,
+    "UserId": 2,
+    "RequestType": "Barangay Clearance",
+    "Description": "i need to request for my barangay clearance hihi test",
+    "Status": "Approved",
+    "CreatedDate": "2025-10-22T02:09:36.1789497+08:00",
+    "ProcessedDate": "2025-10-22T02:10:45.2029362+08:00",
+    "ProcessedBy": 1,
+    "UserName": "Samuel Polizon Jr."
+  },
+  {
+    "Id": 2,
+    "UserId": 3,
+    "RequestType": "Barangay Clearance",
+    "Description": "Purpose: FOR FIRST TIME JOB APPLICANT\n\nDetails: ON GOING",
+    "Status": "Approved",
+    "CreatedDate": "2025-10-22T04:12:36.1401868+08:00",
+    "ProcessedDate": "2025-10-22T04:14:05.7883231+08:00",
+    "ProcessedBy": 1,
+    "UserName": "Samuel Polizon Jr"
+  },
+  {
+    "Id": 3,
+    "UserId": 4,
+    "RequestType": "Barangay Clearance",
+    "Description": "Purpose: for first job aapplicant\n\nDetails: additionaal for awidmawidmawdawdaw",
+    "Status": "Pending",
+    "CreatedDate": "2025-10-24T22:55:10.2255326+08:00",
+    "ProcessedDate": null,
+    "ProcessedBy": null,
+    "UserName": null
+  },
+  {
+    "Id": 4,
+    "UserId": 4,
+    "RequestType": "Business Permit",
+    "Description": "Purpose: awdawd\n\nDetails: awdawd",
+    "Status": "Pending",
+    "CreatedDate": "2025-10-24T22:55:55.4546008+08:00",
+    "ProcessedDate": null,
+    "ProcessedBy": null,
+    "UserName": null
+  }
+]

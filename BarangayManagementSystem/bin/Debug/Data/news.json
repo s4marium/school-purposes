@@ -1,0 +1,40 @@
+[
+  {
+    "Id": 1,
+    "Title": "TEST ANNOUNCEMENT",
+    "Content": "TEST LANG HO",
+    "Summary": "THIS IS A TEST ",
+    "Category": "Announcement",
+    "FeaturedImage": null,
+    "Images": null,
+    "PublishDate": "2025-10-22T03:31:37.9643431+08:00",
+    "ExpiryDate": null,
+    "IsPublished": false,
+    "IsFeatured": false,
+    "IsUrgent": false,
+    "CreatedDate": "2025-10-22T03:31:37.9643431+08:00",
+    "CreatedBy": 1,
+    "ViewCount": 4,
+    "Tags": null,
+    "TargetAudience": null
+  },
+  {
+    "Id": 2,
+    "Title": "hello test",
+    "Content": "awdawdawd awda wdaw ",
+    "Summary": "awdawdawd awda wdaw ",
+    "Category": "Announcement",
+    "FeaturedImage": null,
+    "Images": null,
+    "PublishDate": "2025-10-24T22:57:23.8555356+08:00",
+    "ExpiryDate": null,
+    "IsPublished": false,
+    "IsFeatured": false,
+    "IsUrgent": false,
+    "CreatedDate": "2025-10-24T22:57:23.8555356+08:00",
+    "CreatedBy": 1,
+    "ViewCount": 5,
+    "Tags": null,
+    "TargetAudience": null
+  }
+]

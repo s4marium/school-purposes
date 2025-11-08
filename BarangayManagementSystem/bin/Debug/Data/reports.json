@@ -1,0 +1,38 @@
+[
+  {
+    "Id": 1,
+    "UserId": 2,
+    "ReportType": "Noise Complaint",
+    "Subject": "ANG INGAY NA DITO SA LUGAR NAAMIN",
+    "Description": "ANO NA PO PA AASIKASO NAMAN DITO OH BASANG BASA NA AKO hahashasdha",
+    "Status": "Resolved",
+    "CreatedDate": "2025-10-22T02:10:08.2427452+08:00",
+    "ResolvedDate": "2025-10-22T02:10:53.8268283+08:00",
+    "ResolvedBy": 1,
+    "UserName": "Samuel Polizon Jr."
+  },
+  {
+    "Id": 2,
+    "UserId": 3,
+    "ReportType": "Noise Complaint",
+    "Subject": "ANG INGAY NA AADITO",
+    "Description": "TULONG PO",
+    "Status": "Resolved",
+    "CreatedDate": "2025-10-22T04:13:05.7801093+08:00",
+    "ResolvedDate": "2025-10-22T04:13:58.58855+08:00",
+    "ResolvedBy": 1,
+    "UserName": "Samuel Polizon Jr"
+  },
+  {
+    "Id": 3,
+    "UserId": 4,
+    "ReportType": "Garbage Issues",
+    "Subject": "awdawd",
+    "Description": "awdawd",
+    "Status": "Resolved",
+    "CreatedDate": "2025-10-24T22:55:44.7516189+08:00",
+    "ResolvedDate": "2025-10-24T22:56:40.0794795+08:00",
+    "ResolvedBy": 1,
+    "UserName": null
+  }
+]

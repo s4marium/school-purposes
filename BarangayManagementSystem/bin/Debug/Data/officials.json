@@ -1,0 +1,18 @@
+[
+  {
+    "Id": 1,
+    "FullName": "Samuel",
+    "Position": "KAPITAN",
+    "Department": "TUTAN",
+    "ContactNumber": "IOAMWDAWIMD",
+    "Email": "AWIDMAWDIMAA@GMAIL.COM",
+    "Address": "ADWIONAWD",
+    "ProfileImage": null,
+    "StartDate": "2025-10-24T22:57:10.9832988+08:00",
+    "EndDate": null,
+    "IsActive": true,
+    "Responsibilities": "TITE",
+    "CreatedDate": "2025-10-24T22:57:10.9832988+08:00",
+    "CreatedBy": 1
+  }
+]
