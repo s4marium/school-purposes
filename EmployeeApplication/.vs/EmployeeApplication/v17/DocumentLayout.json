@@ -1,0 +1,108 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\EmployeeApplication\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DDA036E2-4B22-4326-B702-AABEC2029256}|EmployeeApplication.csproj|c:\\users\\samarium\\source\\repos\\s4marium\\school-purposes\\employeeapplication\\frmcomputesalary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDA036E2-4B22-4326-B702-AABEC2029256}|EmployeeApplication.csproj|solutionrelative:frmcomputesalary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDA036E2-4B22-4326-B702-AABEC2029256}|EmployeeApplication.csproj|c:\\users\\samarium\\source\\repos\\s4marium\\school-purposes\\employeeapplication\\frmcomputesalary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DDA036E2-4B22-4326-B702-AABEC2029256}|EmployeeApplication.csproj|solutionrelative:frmcomputesalary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDA036E2-4B22-4326-B702-AABEC2029256}|EmployeeApplication.csproj|c:\\users\\samarium\\source\\repos\\s4marium\\school-purposes\\employeeapplication\\employeenamespace\\parttimeemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDA036E2-4B22-4326-B702-AABEC2029256}|EmployeeApplication.csproj|solutionrelative:employeenamespace\\parttimeemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDA036E2-4B22-4326-B702-AABEC2029256}|EmployeeApplication.csproj|c:\\users\\samarium\\source\\repos\\s4marium\\school-purposes\\employeeapplication\\employeeinterface\\iemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDA036E2-4B22-4326-B702-AABEC2029256}|EmployeeApplication.csproj|solutionrelative:employeeinterface\\iemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDA036E2-4B22-4326-B702-AABEC2029256}|EmployeeApplication.csproj|c:\\users\\samarium\\source\\repos\\s4marium\\school-purposes\\employeeapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDA036E2-4B22-4326-B702-AABEC2029256}|EmployeeApplication.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmComputeSalary.cs",
+              "DocumentMoniker": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\EmployeeApplication\\frmComputeSalary.cs",
+              "RelativeDocumentMoniker": "frmComputeSalary.cs",
+              "ToolTip": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\EmployeeApplication\\frmComputeSalary.cs",
+              "RelativeToolTip": "frmComputeSalary.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAYwCMAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T13:16:00.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IEmployee.cs",
+              "DocumentMoniker": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\EmployeeApplication\\EmployeeInterface\\IEmployee.cs",
+              "RelativeDocumentMoniker": "EmployeeInterface\\IEmployee.cs",
+              "ToolTip": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\EmployeeApplication\\EmployeeInterface\\IEmployee.cs",
+              "RelativeToolTip": "EmployeeInterface\\IEmployee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T13:15:02.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PartTimeEmployee.cs",
+              "DocumentMoniker": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\EmployeeApplication\\EmployeeNamespace\\PartTimeEmployee.cs",
+              "RelativeDocumentMoniker": "EmployeeNamespace\\PartTimeEmployee.cs",
+              "ToolTip": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\EmployeeApplication\\EmployeeNamespace\\PartTimeEmployee.cs",
+              "RelativeToolTip": "EmployeeNamespace\\PartTimeEmployee.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAA7wDAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T13:15:08.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmComputeSalary.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\EmployeeApplication\\frmComputeSalary.cs",
+              "RelativeDocumentMoniker": "frmComputeSalary.cs",
+              "ToolTip": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\EmployeeApplication\\frmComputeSalary.cs [Design]",
+              "RelativeToolTip": "frmComputeSalary.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T12:44:01.64Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\EmployeeApplication\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\EmployeeApplication\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T13:17:01.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

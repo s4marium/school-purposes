@@ -1,0 +1,10 @@
+C:\Users\samarium\source\repos\s4marium\school-purposes\StudentGradeApplication\obj\Debug\StudentGradeApplication.csproj.AssemblyReference.cache
+C:\Users\samarium\source\repos\s4marium\school-purposes\StudentGradeApplication\obj\Debug\StudentGradeApplication.Properties.Resources.resources
+C:\Users\samarium\source\repos\s4marium\school-purposes\StudentGradeApplication\obj\Debug\StudentGradeApplication.csproj.GenerateResource.cache
+C:\Users\samarium\source\repos\s4marium\school-purposes\StudentGradeApplication\obj\Debug\StudentGradeApplication.csproj.CoreCompileInputs.cache
+C:\Users\samarium\source\repos\s4marium\school-purposes\StudentGradeApplication\bin\Debug\StudentGradeApplication.exe.config
+C:\Users\samarium\source\repos\s4marium\school-purposes\StudentGradeApplication\bin\Debug\StudentGradeApplication.exe
+C:\Users\samarium\source\repos\s4marium\school-purposes\StudentGradeApplication\bin\Debug\StudentGradeApplication.pdb
+C:\Users\samarium\source\repos\s4marium\school-purposes\StudentGradeApplication\obj\Debug\StudentGradeApplication.exe
+C:\Users\samarium\source\repos\s4marium\school-purposes\StudentGradeApplication\obj\Debug\StudentGradeApplication.pdb
+C:\Users\samarium\source\repos\s4marium\school-purposes\StudentGradeApplication\obj\Debug\StudentGradeApplication.exe.config

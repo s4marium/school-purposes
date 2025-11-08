@@ -1,0 +1,4 @@
+C:\Users\samarium\source\repos\s4marium\school-purposes\Administrator\obj\Debug\net8.0\Administrator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samarium\source\repos\s4marium\school-purposes\Administrator\obj\Debug\net8.0\Administrator.AssemblyInfoInputs.cache
+C:\Users\samarium\source\repos\s4marium\school-purposes\Administrator\obj\Debug\net8.0\Administrator.AssemblyInfo.cs
+C:\Users\samarium\source\repos\s4marium\school-purposes\Administrator\obj\Debug\net8.0\Administrator.csproj.CoreCompileInputs.cache

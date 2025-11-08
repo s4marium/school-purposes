@@ -1,0 +1,108 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\CalculatorApplication\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{90B965E9-F6BA-48FB-8F0D-D3624B47305C}|CalculatorApplication.csproj|c:\\users\\samarium\\source\\repos\\s4marium\\school-purposes\\calculatorapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90B965E9-F6BA-48FB-8F0D-D3624B47305C}|CalculatorApplication.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90B965E9-F6BA-48FB-8F0D-D3624B47305C}|CalculatorApplication.csproj|c:\\users\\samarium\\source\\repos\\s4marium\\school-purposes\\calculatorapplication\\frmcalculator.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90B965E9-F6BA-48FB-8F0D-D3624B47305C}|CalculatorApplication.csproj|solutionrelative:frmcalculator.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90B965E9-F6BA-48FB-8F0D-D3624B47305C}|CalculatorApplication.csproj|c:\\users\\samarium\\source\\repos\\s4marium\\school-purposes\\calculatorapplication\\frmcalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90B965E9-F6BA-48FB-8F0D-D3624B47305C}|CalculatorApplication.csproj|solutionrelative:frmcalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90B965E9-F6BA-48FB-8F0D-D3624B47305C}|CalculatorApplication.csproj|C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\CalculatorApplication\\calculatorclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90B965E9-F6BA-48FB-8F0D-D3624B47305C}|CalculatorApplication.csproj|solutionrelative:calculatorclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90B965E9-F6BA-48FB-8F0D-D3624B47305C}|CalculatorApplication.csproj|C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\CalculatorApplication\\frmcalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{90B965E9-F6BA-48FB-8F0D-D3624B47305C}|CalculatorApplication.csproj|solutionrelative:frmcalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmCalculator.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\CalculatorApplication\\FrmCalculator.Designer.cs",
+              "RelativeDocumentMoniker": "FrmCalculator.Designer.cs",
+              "ToolTip": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\CalculatorApplication\\FrmCalculator.Designer.cs",
+              "RelativeToolTip": "FrmCalculator.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T14:58:59.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\CalculatorApplication\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\CalculatorApplication\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T14:58:18.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FrmCalculator.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\CalculatorApplication\\FrmCalculator.cs",
+              "RelativeDocumentMoniker": "FrmCalculator.cs",
+              "ToolTip": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\CalculatorApplication\\FrmCalculator.cs [Design]",
+              "RelativeToolTip": "FrmCalculator.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T07:31:56.655Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CalculatorClass.cs",
+              "DocumentMoniker": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\CalculatorApplication\\CalculatorClass.cs",
+              "RelativeDocumentMoniker": "CalculatorClass.cs",
+              "ToolTip": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\CalculatorApplication\\CalculatorClass.cs",
+              "RelativeToolTip": "CalculatorClass.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T07:27:47.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmCalculator.cs",
+              "DocumentMoniker": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\CalculatorApplication\\FrmCalculator.cs",
+              "RelativeDocumentMoniker": "FrmCalculator.cs",
+              "ToolTip": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\CalculatorApplication\\FrmCalculator.cs",
+              "RelativeToolTip": "FrmCalculator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T07:26:54.417Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

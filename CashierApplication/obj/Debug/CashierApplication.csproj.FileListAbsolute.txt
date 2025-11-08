@@ -1,0 +1,11 @@
+C:\Users\samarium\source\repos\s4marium\school-purposes\CashierApplication\bin\Debug\CashierApplication.exe.config
+C:\Users\samarium\source\repos\s4marium\school-purposes\CashierApplication\bin\Debug\CashierApplication.exe
+C:\Users\samarium\source\repos\s4marium\school-purposes\CashierApplication\bin\Debug\CashierApplication.pdb
+C:\Users\samarium\source\repos\s4marium\school-purposes\CashierApplication\obj\Debug\CashierApplication.csproj.AssemblyReference.cache
+C:\Users\samarium\source\repos\s4marium\school-purposes\CashierApplication\obj\Debug\CashierApplication.Properties.Resources.resources
+C:\Users\samarium\source\repos\s4marium\school-purposes\CashierApplication\obj\Debug\CashierApplication.csproj.GenerateResource.cache
+C:\Users\samarium\source\repos\s4marium\school-purposes\CashierApplication\obj\Debug\CashierApplication.csproj.CoreCompileInputs.cache
+C:\Users\samarium\source\repos\s4marium\school-purposes\CashierApplication\obj\Debug\CashierApplication.exe
+C:\Users\samarium\source\repos\s4marium\school-purposes\CashierApplication\obj\Debug\CashierApplication.pdb
+C:\Users\samarium\source\repos\s4marium\school-purposes\CashierApplication\obj\Debug\CashierApplication.exe.config
+C:\Users\samarium\source\repos\s4marium\school-purposes\CashierApplication\obj\Debug\CashierApplication.frmPurchaseDiscountedItem.resources

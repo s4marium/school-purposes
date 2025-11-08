@@ -1,0 +1,14 @@
+C:\Users\samarium\source\repos\s4marium\school-purposes\GreetingApp\bin\Debug\net8.0\GreetingApp.exe
+C:\Users\samarium\source\repos\s4marium\school-purposes\GreetingApp\bin\Debug\net8.0\GreetingApp.deps.json
+C:\Users\samarium\source\repos\s4marium\school-purposes\GreetingApp\bin\Debug\net8.0\GreetingApp.runtimeconfig.json
+C:\Users\samarium\source\repos\s4marium\school-purposes\GreetingApp\bin\Debug\net8.0\GreetingApp.dll
+C:\Users\samarium\source\repos\s4marium\school-purposes\GreetingApp\bin\Debug\net8.0\GreetingApp.pdb
+C:\Users\samarium\source\repos\s4marium\school-purposes\GreetingApp\obj\Debug\net8.0\GreetingApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samarium\source\repos\s4marium\school-purposes\GreetingApp\obj\Debug\net8.0\GreetingApp.AssemblyInfoInputs.cache
+C:\Users\samarium\source\repos\s4marium\school-purposes\GreetingApp\obj\Debug\net8.0\GreetingApp.AssemblyInfo.cs
+C:\Users\samarium\source\repos\s4marium\school-purposes\GreetingApp\obj\Debug\net8.0\GreetingApp.csproj.CoreCompileInputs.cache
+C:\Users\samarium\source\repos\s4marium\school-purposes\GreetingApp\obj\Debug\net8.0\GreetingApp.dll
+C:\Users\samarium\source\repos\s4marium\school-purposes\GreetingApp\obj\Debug\net8.0\refint\GreetingApp.dll
+C:\Users\samarium\source\repos\s4marium\school-purposes\GreetingApp\obj\Debug\net8.0\GreetingApp.pdb
+C:\Users\samarium\source\repos\s4marium\school-purposes\GreetingApp\obj\Debug\net8.0\GreetingApp.genruntimeconfig.cache
+C:\Users\samarium\source\repos\s4marium\school-purposes\GreetingApp\obj\Debug\net8.0\ref\GreetingApp.dll

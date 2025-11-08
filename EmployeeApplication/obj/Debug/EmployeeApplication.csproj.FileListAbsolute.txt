@@ -1,0 +1,10 @@
+C:\Users\samarium\source\repos\s4marium\school-purposes\EmployeeApplication\obj\Debug\EmployeeApplication.csproj.AssemblyReference.cache
+C:\Users\samarium\source\repos\s4marium\school-purposes\EmployeeApplication\obj\Debug\EmployeeApplication.Properties.Resources.resources
+C:\Users\samarium\source\repos\s4marium\school-purposes\EmployeeApplication\obj\Debug\EmployeeApplication.csproj.GenerateResource.cache
+C:\Users\samarium\source\repos\s4marium\school-purposes\EmployeeApplication\obj\Debug\EmployeeApplication.csproj.CoreCompileInputs.cache
+C:\Users\samarium\source\repos\s4marium\school-purposes\EmployeeApplication\bin\Debug\EmployeeApplication.exe.config
+C:\Users\samarium\source\repos\s4marium\school-purposes\EmployeeApplication\bin\Debug\EmployeeApplication.exe
+C:\Users\samarium\source\repos\s4marium\school-purposes\EmployeeApplication\bin\Debug\EmployeeApplication.pdb
+C:\Users\samarium\source\repos\s4marium\school-purposes\EmployeeApplication\obj\Debug\EmployeeApplication.exe
+C:\Users\samarium\source\repos\s4marium\school-purposes\EmployeeApplication\obj\Debug\EmployeeApplication.pdb
+C:\Users\samarium\source\repos\s4marium\school-purposes\EmployeeApplication\obj\Debug\EmployeeApplication.exe.config

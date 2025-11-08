@@ -1,0 +1,14 @@
+C:\Users\samarium\source\repos\s4marium\school-purposes\ComputeAvarageApp\bin\Debug\net8.0\ComputeAvarageApp.exe
+C:\Users\samarium\source\repos\s4marium\school-purposes\ComputeAvarageApp\bin\Debug\net8.0\ComputeAvarageApp.deps.json
+C:\Users\samarium\source\repos\s4marium\school-purposes\ComputeAvarageApp\bin\Debug\net8.0\ComputeAvarageApp.runtimeconfig.json
+C:\Users\samarium\source\repos\s4marium\school-purposes\ComputeAvarageApp\bin\Debug\net8.0\ComputeAvarageApp.dll
+C:\Users\samarium\source\repos\s4marium\school-purposes\ComputeAvarageApp\bin\Debug\net8.0\ComputeAvarageApp.pdb
+C:\Users\samarium\source\repos\s4marium\school-purposes\ComputeAvarageApp\obj\Debug\net8.0\ComputeAvarageApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samarium\source\repos\s4marium\school-purposes\ComputeAvarageApp\obj\Debug\net8.0\ComputeAvarageApp.AssemblyInfoInputs.cache
+C:\Users\samarium\source\repos\s4marium\school-purposes\ComputeAvarageApp\obj\Debug\net8.0\ComputeAvarageApp.AssemblyInfo.cs
+C:\Users\samarium\source\repos\s4marium\school-purposes\ComputeAvarageApp\obj\Debug\net8.0\ComputeAvarageApp.csproj.CoreCompileInputs.cache
+C:\Users\samarium\source\repos\s4marium\school-purposes\ComputeAvarageApp\obj\Debug\net8.0\ComputeAvarageApp.dll
+C:\Users\samarium\source\repos\s4marium\school-purposes\ComputeAvarageApp\obj\Debug\net8.0\refint\ComputeAvarageApp.dll
+C:\Users\samarium\source\repos\s4marium\school-purposes\ComputeAvarageApp\obj\Debug\net8.0\ComputeAvarageApp.pdb
+C:\Users\samarium\source\repos\s4marium\school-purposes\ComputeAvarageApp\obj\Debug\net8.0\ComputeAvarageApp.genruntimeconfig.cache
+C:\Users\samarium\source\repos\s4marium\school-purposes\ComputeAvarageApp\obj\Debug\net8.0\ref\ComputeAvarageApp.dll

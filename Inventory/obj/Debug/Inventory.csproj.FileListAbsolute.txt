@@ -1,0 +1,11 @@
+C:\Users\samarium\source\repos\s4marium\school-purposes\Inventory\bin\Debug\Inventory.exe.config
+C:\Users\samarium\source\repos\s4marium\school-purposes\Inventory\bin\Debug\Inventory.exe
+C:\Users\samarium\source\repos\s4marium\school-purposes\Inventory\bin\Debug\Inventory.pdb
+C:\Users\samarium\source\repos\s4marium\school-purposes\Inventory\obj\Debug\Inventory.csproj.AssemblyReference.cache
+C:\Users\samarium\source\repos\s4marium\school-purposes\Inventory\obj\Debug\Inventory.Properties.Resources.resources
+C:\Users\samarium\source\repos\s4marium\school-purposes\Inventory\obj\Debug\Inventory.csproj.GenerateResource.cache
+C:\Users\samarium\source\repos\s4marium\school-purposes\Inventory\obj\Debug\Inventory.csproj.CoreCompileInputs.cache
+C:\Users\samarium\source\repos\s4marium\school-purposes\Inventory\obj\Debug\Inventory.exe
+C:\Users\samarium\source\repos\s4marium\school-purposes\Inventory\obj\Debug\Inventory.pdb
+C:\Users\samarium\source\repos\s4marium\school-purposes\Inventory\obj\Debug\Inventory.exe.config
+C:\Users\samarium\source\repos\s4marium\school-purposes\Inventory\obj\Debug\Inventory.Form1.resources

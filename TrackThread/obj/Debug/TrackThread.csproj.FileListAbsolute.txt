@@ -1,0 +1,10 @@
+C:\Users\samarium\source\repos\s4marium\school-purposes\TrackThread\bin\Debug\TrackThread.exe.config
+C:\Users\samarium\source\repos\s4marium\school-purposes\TrackThread\bin\Debug\TrackThread.exe
+C:\Users\samarium\source\repos\s4marium\school-purposes\TrackThread\bin\Debug\TrackThread.pdb
+C:\Users\samarium\source\repos\s4marium\school-purposes\TrackThread\obj\Debug\TrackThread.csproj.AssemblyReference.cache
+C:\Users\samarium\source\repos\s4marium\school-purposes\TrackThread\obj\Debug\TrackThread.Properties.Resources.resources
+C:\Users\samarium\source\repos\s4marium\school-purposes\TrackThread\obj\Debug\TrackThread.csproj.GenerateResource.cache
+C:\Users\samarium\source\repos\s4marium\school-purposes\TrackThread\obj\Debug\TrackThread.csproj.CoreCompileInputs.cache
+C:\Users\samarium\source\repos\s4marium\school-purposes\TrackThread\obj\Debug\TrackThread.exe
+C:\Users\samarium\source\repos\s4marium\school-purposes\TrackThread\obj\Debug\TrackThread.pdb
+C:\Users\samarium\source\repos\s4marium\school-purposes\TrackThread\obj\Debug\TrackThread.exe.config

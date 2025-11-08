@@ -1,0 +1,14 @@
+C:\Users\samarium\source\repos\s4marium\school-purposes\DataTypesApp\bin\Debug\net8.0\DataTypesApp.exe
+C:\Users\samarium\source\repos\s4marium\school-purposes\DataTypesApp\bin\Debug\net8.0\DataTypesApp.deps.json
+C:\Users\samarium\source\repos\s4marium\school-purposes\DataTypesApp\bin\Debug\net8.0\DataTypesApp.runtimeconfig.json
+C:\Users\samarium\source\repos\s4marium\school-purposes\DataTypesApp\bin\Debug\net8.0\DataTypesApp.dll
+C:\Users\samarium\source\repos\s4marium\school-purposes\DataTypesApp\bin\Debug\net8.0\DataTypesApp.pdb
+C:\Users\samarium\source\repos\s4marium\school-purposes\DataTypesApp\obj\Debug\net8.0\DataTypesApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samarium\source\repos\s4marium\school-purposes\DataTypesApp\obj\Debug\net8.0\DataTypesApp.AssemblyInfoInputs.cache
+C:\Users\samarium\source\repos\s4marium\school-purposes\DataTypesApp\obj\Debug\net8.0\DataTypesApp.AssemblyInfo.cs
+C:\Users\samarium\source\repos\s4marium\school-purposes\DataTypesApp\obj\Debug\net8.0\DataTypesApp.csproj.CoreCompileInputs.cache
+C:\Users\samarium\source\repos\s4marium\school-purposes\DataTypesApp\obj\Debug\net8.0\DataTypesApp.dll
+C:\Users\samarium\source\repos\s4marium\school-purposes\DataTypesApp\obj\Debug\net8.0\refint\DataTypesApp.dll
+C:\Users\samarium\source\repos\s4marium\school-purposes\DataTypesApp\obj\Debug\net8.0\DataTypesApp.pdb
+C:\Users\samarium\source\repos\s4marium\school-purposes\DataTypesApp\obj\Debug\net8.0\DataTypesApp.genruntimeconfig.cache
+C:\Users\samarium\source\repos\s4marium\school-purposes\DataTypesApp\obj\Debug\net8.0\ref\DataTypesApp.dll

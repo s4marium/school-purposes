@@ -1,0 +1,10 @@
+C:\Users\samarium\source\repos\s4marium\school-purposes\StudentRegistrationApplication\obj\Debug\StudentRegistrationApplication.csproj.AssemblyReference.cache
+C:\Users\samarium\source\repos\s4marium\school-purposes\StudentRegistrationApplication\obj\Debug\StudentRegistrationApplication.Properties.Resources.resources
+C:\Users\samarium\source\repos\s4marium\school-purposes\StudentRegistrationApplication\obj\Debug\StudentRegistrationApplication.csproj.GenerateResource.cache
+C:\Users\samarium\source\repos\s4marium\school-purposes\StudentRegistrationApplication\obj\Debug\StudentRegistrationApplication.csproj.CoreCompileInputs.cache
+C:\Users\samarium\source\repos\s4marium\school-purposes\StudentRegistrationApplication\bin\Debug\StudentRegistrationApplication.exe.config
+C:\Users\samarium\source\repos\s4marium\school-purposes\StudentRegistrationApplication\bin\Debug\StudentRegistrationApplication.exe
+C:\Users\samarium\source\repos\s4marium\school-purposes\StudentRegistrationApplication\bin\Debug\StudentRegistrationApplication.pdb
+C:\Users\samarium\source\repos\s4marium\school-purposes\StudentRegistrationApplication\obj\Debug\StudentRegistrationApplication.exe
+C:\Users\samarium\source\repos\s4marium\school-purposes\StudentRegistrationApplication\obj\Debug\StudentRegistrationApplication.pdb
+C:\Users\samarium\source\repos\s4marium\school-purposes\StudentRegistrationApplication\obj\Debug\StudentRegistrationApplication.exe.config

@@ -1,0 +1,14 @@
+C:\Users\samarium\source\repos\s4marium\school-purposes\ApplePriceCalculator\bin\Debug\net8.0\ApplePriceCalculator.exe
+C:\Users\samarium\source\repos\s4marium\school-purposes\ApplePriceCalculator\bin\Debug\net8.0\ApplePriceCalculator.deps.json
+C:\Users\samarium\source\repos\s4marium\school-purposes\ApplePriceCalculator\bin\Debug\net8.0\ApplePriceCalculator.runtimeconfig.json
+C:\Users\samarium\source\repos\s4marium\school-purposes\ApplePriceCalculator\bin\Debug\net8.0\ApplePriceCalculator.dll
+C:\Users\samarium\source\repos\s4marium\school-purposes\ApplePriceCalculator\bin\Debug\net8.0\ApplePriceCalculator.pdb
+C:\Users\samarium\source\repos\s4marium\school-purposes\ApplePriceCalculator\obj\Debug\net8.0\ApplePriceCalculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samarium\source\repos\s4marium\school-purposes\ApplePriceCalculator\obj\Debug\net8.0\ApplePriceCalculator.AssemblyInfoInputs.cache
+C:\Users\samarium\source\repos\s4marium\school-purposes\ApplePriceCalculator\obj\Debug\net8.0\ApplePriceCalculator.AssemblyInfo.cs
+C:\Users\samarium\source\repos\s4marium\school-purposes\ApplePriceCalculator\obj\Debug\net8.0\ApplePriceCalculator.csproj.CoreCompileInputs.cache
+C:\Users\samarium\source\repos\s4marium\school-purposes\ApplePriceCalculator\obj\Debug\net8.0\ApplePriceCalculator.dll
+C:\Users\samarium\source\repos\s4marium\school-purposes\ApplePriceCalculator\obj\Debug\net8.0\refint\ApplePriceCalculator.dll
+C:\Users\samarium\source\repos\s4marium\school-purposes\ApplePriceCalculator\obj\Debug\net8.0\ApplePriceCalculator.pdb
+C:\Users\samarium\source\repos\s4marium\school-purposes\ApplePriceCalculator\obj\Debug\net8.0\ApplePriceCalculator.genruntimeconfig.cache
+C:\Users\samarium\source\repos\s4marium\school-purposes\ApplePriceCalculator\obj\Debug\net8.0\ref\ApplePriceCalculator.dll

@@ -1,0 +1,74 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\CalculatorApplication\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{90B965E9-F6BA-48FB-8F0D-D3624B47305C}|CalculatorApplication.csproj|c:\\users\\samarium\\source\\repos\\s4marium\\school-purposes\\calculatorapplication\\frmcalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90B965E9-F6BA-48FB-8F0D-D3624B47305C}|CalculatorApplication.csproj|solutionrelative:frmcalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90B965E9-F6BA-48FB-8F0D-D3624B47305C}|CalculatorApplication.csproj|c:\\users\\samarium\\source\\repos\\s4marium\\school-purposes\\calculatorapplication\\calculatorclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90B965E9-F6BA-48FB-8F0D-D3624B47305C}|CalculatorApplication.csproj|solutionrelative:calculatorclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90B965E9-F6BA-48FB-8F0D-D3624B47305C}|CalculatorApplication.csproj|c:\\users\\samarium\\source\\repos\\s4marium\\school-purposes\\calculatorapplication\\frmcalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{90B965E9-F6BA-48FB-8F0D-D3624B47305C}|CalculatorApplication.csproj|solutionrelative:frmcalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmCalculator.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\CalculatorApplication\\FrmCalculator.cs",
+              "RelativeDocumentMoniker": "FrmCalculator.cs",
+              "ToolTip": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\CalculatorApplication\\FrmCalculator.cs [Design]",
+              "RelativeToolTip": "FrmCalculator.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T07:31:56.655Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CalculatorClass.cs",
+              "DocumentMoniker": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\CalculatorApplication\\CalculatorClass.cs",
+              "RelativeDocumentMoniker": "CalculatorClass.cs",
+              "ToolTip": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\CalculatorApplication\\CalculatorClass.cs",
+              "RelativeToolTip": "CalculatorClass.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T07:27:47.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmCalculator.cs",
+              "DocumentMoniker": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\CalculatorApplication\\FrmCalculator.cs",
+              "RelativeDocumentMoniker": "FrmCalculator.cs",
+              "ToolTip": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\CalculatorApplication\\FrmCalculator.cs",
+              "RelativeToolTip": "FrmCalculator.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T07:26:54.417Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

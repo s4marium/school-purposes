@@ -1,0 +1,124 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\CashierApplication\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A95CFB16-FB01-4147-8FBC-451DC635F898}|CashierApplication.csproj|c:\\users\\samarium\\source\\repos\\s4marium\\school-purposes\\cashierapplication\\frmpurchasediscounteditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A95CFB16-FB01-4147-8FBC-451DC635F898}|CashierApplication.csproj|solutionrelative:frmpurchasediscounteditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A95CFB16-FB01-4147-8FBC-451DC635F898}|CashierApplication.csproj|c:\\users\\samarium\\source\\repos\\s4marium\\school-purposes\\cashierapplication\\frmpurchasediscounteditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A95CFB16-FB01-4147-8FBC-451DC635F898}|CashierApplication.csproj|solutionrelative:frmpurchasediscounteditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A95CFB16-FB01-4147-8FBC-451DC635F898}|CashierApplication.csproj|c:\\users\\samarium\\source\\repos\\s4marium\\school-purposes\\cashierapplication\\frmloginaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A95CFB16-FB01-4147-8FBC-451DC635F898}|CashierApplication.csproj|solutionrelative:frmloginaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A95CFB16-FB01-4147-8FBC-451DC635F898}|CashierApplication.csproj|c:\\users\\samarium\\source\\repos\\s4marium\\school-purposes\\cashierapplication\\cashier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A95CFB16-FB01-4147-8FBC-451DC635F898}|CashierApplication.csproj|solutionrelative:cashier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A95CFB16-FB01-4147-8FBC-451DC635F898}|CashierApplication.csproj|c:\\users\\samarium\\source\\repos\\s4marium\\school-purposes\\cashierapplication\\useraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A95CFB16-FB01-4147-8FBC-451DC635F898}|CashierApplication.csproj|solutionrelative:useraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A95CFB16-FB01-4147-8FBC-451DC635F898}|CashierApplication.csproj|c:\\users\\samarium\\source\\repos\\s4marium\\school-purposes\\cashierapplication\\frmloginaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A95CFB16-FB01-4147-8FBC-451DC635F898}|CashierApplication.csproj|solutionrelative:frmloginaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmPurchaseDiscountedItem.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\CashierApplication\\frmPurchaseDiscountedItem.cs",
+              "RelativeDocumentMoniker": "frmPurchaseDiscountedItem.cs",
+              "ToolTip": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\CashierApplication\\frmPurchaseDiscountedItem.cs [Design]",
+              "RelativeToolTip": "frmPurchaseDiscountedItem.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T11:42:21.987Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frmLoginAccount.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\CashierApplication\\frmLoginAccount.cs",
+              "RelativeDocumentMoniker": "frmLoginAccount.cs",
+              "ToolTip": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\CashierApplication\\frmLoginAccount.cs [Design]",
+              "RelativeToolTip": "frmLoginAccount.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T11:31:27.239Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmLoginAccount.cs",
+              "DocumentMoniker": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\CashierApplication\\frmLoginAccount.cs",
+              "RelativeDocumentMoniker": "frmLoginAccount.cs",
+              "ToolTip": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\CashierApplication\\frmLoginAccount.cs",
+              "RelativeToolTip": "frmLoginAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T11:23:32.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Cashier.cs",
+              "DocumentMoniker": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\CashierApplication\\Cashier.cs",
+              "RelativeDocumentMoniker": "Cashier.cs",
+              "ToolTip": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\CashierApplication\\Cashier.cs",
+              "RelativeToolTip": "Cashier.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T11:23:28.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserAccount.cs",
+              "DocumentMoniker": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\CashierApplication\\UserAccount.cs",
+              "RelativeDocumentMoniker": "UserAccount.cs",
+              "ToolTip": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\CashierApplication\\UserAccount.cs",
+              "RelativeToolTip": "UserAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T11:23:23.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmPurchaseDiscountedItem.cs",
+              "DocumentMoniker": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\CashierApplication\\frmPurchaseDiscountedItem.cs",
+              "RelativeDocumentMoniker": "frmPurchaseDiscountedItem.cs",
+              "ToolTip": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\CashierApplication\\frmPurchaseDiscountedItem.cs",
+              "RelativeToolTip": "frmPurchaseDiscountedItem.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwEkAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T10:48:00.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

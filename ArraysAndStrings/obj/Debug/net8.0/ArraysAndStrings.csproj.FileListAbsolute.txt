@@ -1,0 +1,14 @@
+C:\Users\samarium\source\repos\s4marium\school-purposes\ArraysAndStrings\bin\Debug\net8.0\ArraysAndStrings.exe
+C:\Users\samarium\source\repos\s4marium\school-purposes\ArraysAndStrings\bin\Debug\net8.0\ArraysAndStrings.deps.json
+C:\Users\samarium\source\repos\s4marium\school-purposes\ArraysAndStrings\bin\Debug\net8.0\ArraysAndStrings.runtimeconfig.json
+C:\Users\samarium\source\repos\s4marium\school-purposes\ArraysAndStrings\bin\Debug\net8.0\ArraysAndStrings.dll
+C:\Users\samarium\source\repos\s4marium\school-purposes\ArraysAndStrings\bin\Debug\net8.0\ArraysAndStrings.pdb
+C:\Users\samarium\source\repos\s4marium\school-purposes\ArraysAndStrings\obj\Debug\net8.0\ArraysAndStrings.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samarium\source\repos\s4marium\school-purposes\ArraysAndStrings\obj\Debug\net8.0\ArraysAndStrings.AssemblyInfoInputs.cache
+C:\Users\samarium\source\repos\s4marium\school-purposes\ArraysAndStrings\obj\Debug\net8.0\ArraysAndStrings.AssemblyInfo.cs
+C:\Users\samarium\source\repos\s4marium\school-purposes\ArraysAndStrings\obj\Debug\net8.0\ArraysAndStrings.csproj.CoreCompileInputs.cache
+C:\Users\samarium\source\repos\s4marium\school-purposes\ArraysAndStrings\obj\Debug\net8.0\ArraysAndStrings.dll
+C:\Users\samarium\source\repos\s4marium\school-purposes\ArraysAndStrings\obj\Debug\net8.0\refint\ArraysAndStrings.dll
+C:\Users\samarium\source\repos\s4marium\school-purposes\ArraysAndStrings\obj\Debug\net8.0\ArraysAndStrings.pdb
+C:\Users\samarium\source\repos\s4marium\school-purposes\ArraysAndStrings\obj\Debug\net8.0\ArraysAndStrings.genruntimeconfig.cache
+C:\Users\samarium\source\repos\s4marium\school-purposes\ArraysAndStrings\obj\Debug\net8.0\ref\ArraysAndStrings.dll

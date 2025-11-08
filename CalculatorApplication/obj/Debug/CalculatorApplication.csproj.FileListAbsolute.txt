@@ -1,0 +1,11 @@
+C:\Users\samarium\source\repos\s4marium\school-purposes\CalculatorApplication\obj\Debug\CalculatorApplication.csproj.AssemblyReference.cache
+C:\Users\samarium\source\repos\s4marium\school-purposes\CalculatorApplication\obj\Debug\CalculatorApplication.Properties.Resources.resources
+C:\Users\samarium\source\repos\s4marium\school-purposes\CalculatorApplication\obj\Debug\CalculatorApplication.csproj.GenerateResource.cache
+C:\Users\samarium\source\repos\s4marium\school-purposes\CalculatorApplication\obj\Debug\CalculatorApplication.csproj.CoreCompileInputs.cache
+C:\Users\samarium\source\repos\s4marium\school-purposes\CalculatorApplication\bin\Debug\CalculatorApplication.exe.config
+C:\Users\samarium\source\repos\s4marium\school-purposes\CalculatorApplication\bin\Debug\CalculatorApplication.exe
+C:\Users\samarium\source\repos\s4marium\school-purposes\CalculatorApplication\bin\Debug\CalculatorApplication.pdb
+C:\Users\samarium\source\repos\s4marium\school-purposes\CalculatorApplication\obj\Debug\CalculatorApplication.exe
+C:\Users\samarium\source\repos\s4marium\school-purposes\CalculatorApplication\obj\Debug\CalculatorApplication.pdb
+C:\Users\samarium\source\repos\s4marium\school-purposes\CalculatorApplication\obj\Debug\CalculatorApplication.exe.config
+C:\Users\samarium\source\repos\s4marium\school-purposes\CalculatorApplication\obj\Debug\CalculatorApplication.FrmCalculator.resources
