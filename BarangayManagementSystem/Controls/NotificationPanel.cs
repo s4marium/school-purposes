@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.Linq;
 using System.Windows.Forms;
 using BarangayManagementSystem.Data;
 using BarangayManagementSystem.Models;
@@ -70,7 +71,7 @@ namespace BarangayManagementSystem.Controls  // CHANGED: From .Forms to .Control
             }
         }
 
-        private void ShowNotifications()
+        public void ShowNotifications()
         {
             try
             {
@@ -128,7 +129,12 @@ namespace BarangayManagementSystem.Controls  // CHANGED: From .Forms to .Control
                     BackColor = Color.FromArgb(248, 249, 250)
                 };
 
-                var notifications = EnhancedDatabaseHelper.GetUserNotifications(currentUser.Id, 20);
+                var notifications = EnhancedDatabaseHelper.GetUserNotifications(currentUser.Id, false);
+                // Limit to 20 most recent
+                if (notifications != null && notifications.Count > 20)
+                {
+                    notifications = notifications.Take(20).ToList();
+                }
                 
                 if (notifications != null && notifications.Count > 0)
                 {

@@ -1,0 +1,12 @@
+C:\Users\samarium\Desktop\school-purposes\FrmLab1\obj\Debug\FrmLab1.csproj.AssemblyReference.cache
+C:\Users\samarium\Desktop\school-purposes\FrmLab1\obj\Debug\FrmLab1.Properties.Resources.resources
+C:\Users\samarium\Desktop\school-purposes\FrmLab1\obj\Debug\FrmLab1.csproj.GenerateResource.cache
+C:\Users\samarium\Desktop\school-purposes\FrmLab1\obj\Debug\FrmLab1.csproj.CoreCompileInputs.cache
+C:\Users\samarium\Desktop\school-purposes\FrmLab1\bin\Debug\FrmLab1.exe.config
+C:\Users\samarium\Desktop\school-purposes\FrmLab1\bin\Debug\FrmLab1.exe
+C:\Users\samarium\Desktop\school-purposes\FrmLab1\bin\Debug\FrmLab1.pdb
+C:\Users\samarium\Desktop\school-purposes\FrmLab1\obj\Debug\FrmLab1.exe
+C:\Users\samarium\Desktop\school-purposes\FrmLab1\obj\Debug\FrmLab1.pdb
+C:\Users\samarium\Desktop\school-purposes\FrmLab1\obj\Debug\FrmLab1.exe.config
+C:\Users\samarium\Desktop\school-purposes\FrmLab1\obj\Debug\FrmLab1.FrmLab1.resources
+C:\Users\samarium\Desktop\school-purposes\FrmLab1\obj\Debug\FrmLab1.FrmRegistration.resources

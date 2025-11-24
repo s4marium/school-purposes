@@ -1,8 +1,7 @@
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 using BarangayManagementSystem.Models;
 using Newtonsoft.Json;
 
@@ -10,733 +9,491 @@ namespace BarangayManagementSystem.Data
 {
     public static class EnhancedDatabaseHelper
     {
-        private static string dataFolder = "Data";
-        private static string notificationsFile = Path.Combine(dataFolder, "notifications.json");
-        private static string newsFile = Path.Combine(dataFolder, "news.json");
-        private static string officialsFile = Path.Combine(dataFolder, "officials.json");
-        private static string activitiesFile = Path.Combine(dataFolder, "activities.json");
-        private static string settingsFile = Path.Combine(dataFolder, "settings.json");
-        private static string blottersFile = Path.Combine(dataFolder, "blotters.json");
+        // ============================================
+        // Barangay Officials Methods
+        // ============================================
 
-        private static List<Notification> notifications = new List<Notification>();
-        private static List<News> newsList = new List<News>();
-        private static List<BarangayOfficial> officials = new List<BarangayOfficial>();
-        private static List<ActivityLog> activities = new List<ActivityLog>();
-        private static List<Blotter> blotters = new List<Blotter>();
-        private static SystemSettings systemSettings;
-
-        static EnhancedDatabaseHelper()
+        public static List<BarangayOfficial> GetAllOfficials(bool activeOnly = false)
         {
-            LoadAllData();
-        }
-
-        private static void LoadAllData()
-        {
-            try
+            List<BarangayOfficial> officials = new List<BarangayOfficial>();
+            string query = activeOnly 
+                ? "SELECT * FROM BarangayOfficials WHERE IsActive = TRUE ORDER BY Position" 
+                : "SELECT * FROM BarangayOfficials ORDER BY Position";
+            
+            using (MySqlConnection conn = DatabaseHelper.GetConnection())
             {
-                if (!Directory.Exists(dataFolder))
-                    Directory.CreateDirectory(dataFolder);
-
-                LoadNotifications();
-                LoadNews();
-                LoadOfficials();
-                LoadActivities();
-                LoadSettings();
-                LoadBlotters();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error loading enhanced data: {ex.Message}", "Error");
-            }
-        }
-
-        #region Notifications
-
-        private static void LoadNotifications()
-        {
-            try
-            {
-                if (File.Exists(notificationsFile))
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                using (MySqlDataReader reader = cmd.ExecuteReader())
                 {
-                    var json = File.ReadAllText(notificationsFile);
-                    if (!string.IsNullOrWhiteSpace(json))
+                    while (reader.Read())
                     {
-                        notifications = JsonConvert.DeserializeObject<List<Notification>>(json) ?? new List<Notification>();
+                        officials.Add(new BarangayOfficial
+                        {
+                            Id = reader.GetInt32("Id"),
+                            FullName = reader.GetString("FullName"),
+                            Position = reader.GetString("Position"),
+                            Department = reader.IsDBNull(reader.GetOrdinal("Department")) ? null : reader.GetString("Department"),
+                            ContactNumber = reader.IsDBNull(reader.GetOrdinal("ContactNumber")) ? null : reader.GetString("ContactNumber"),
+                            Email = reader.IsDBNull(reader.GetOrdinal("Email")) ? null : reader.GetString("Email"),
+                            Address = reader.IsDBNull(reader.GetOrdinal("Address")) ? null : reader.GetString("Address"),
+                            StartDate = reader.GetDateTime("StartDate"),
+                            EndDate = reader.IsDBNull(reader.GetOrdinal("EndDate")) ? (DateTime?)null : reader.GetDateTime("EndDate"),
+                            IsActive = reader.GetBoolean("IsActive"),
+                            Responsibilities = reader.IsDBNull(reader.GetOrdinal("Responsibilities")) ? null : reader.GetString("Responsibilities")
+                        });
                     }
                 }
             }
-            catch
+            return officials;
+        }
+
+        public static bool DeleteOfficial(int officialId)
+        {
+            string query = "DELETE FROM BarangayOfficials WHERE Id = @Id";
+            using (MySqlConnection conn = DatabaseHelper.GetConnection())
             {
-                notifications = new List<Notification>();
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@Id", officialId);
+                    return cmd.ExecuteNonQuery() > 0;
+                }
             }
         }
 
-        private static void SaveNotifications()
+        public static bool ToggleOfficialStatus(int officialId)
         {
-            try
+            string query = "UPDATE BarangayOfficials SET IsActive = NOT IsActive WHERE Id = @Id";
+            using (MySqlConnection conn = DatabaseHelper.GetConnection())
             {
-                var json = JsonConvert.SerializeObject(notifications, Formatting.Indented);
-                File.WriteAllText(notificationsFile, json);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error saving notifications: {ex.Message}", "Error");
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@Id", officialId);
+                    return cmd.ExecuteNonQuery() > 0;
+                }
             }
         }
+
+        // ============================================
+        // News Methods
+        // ============================================
+
+        public static List<News> GetAllNews()
+        {
+            List<News> newsList = new List<News>();
+            string query = "SELECT * FROM News ORDER BY PublishedDate DESC";
+            
+            using (MySqlConnection conn = DatabaseHelper.GetConnection())
+            {
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                using (MySqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        newsList.Add(new News
+                        {
+                            Id = reader.GetInt32("Id"),
+                            Title = reader.GetString("Title"),
+                            Content = reader.GetString("Content"),
+                            Category = reader.GetString("Category"),
+                            PublishedDate = reader.GetDateTime("PublishedDate"),
+                            CreatedDate = reader.GetDateTime("CreatedDate"),
+                            CreatedBy = reader.GetInt32("CreatedBy")
+                        });
+                    }
+                }
+            }
+            return newsList;
+        }
+
+        public static bool DeleteNews(int newsId)
+        {
+            string query = "DELETE FROM News WHERE Id = @Id";
+            using (MySqlConnection conn = DatabaseHelper.GetConnection())
+            {
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@Id", newsId);
+                    return cmd.ExecuteNonQuery() > 0;
+                }
+            }
+        }
+
+        // ============================================
+        // Announcement Methods
+        // ============================================
+
+        public static List<Announcement> GetRecentAnnouncements(int count = 10)
+        {
+            List<Announcement> announcements = new List<Announcement>();
+            string query = $"SELECT * FROM Announcements ORDER BY CreatedDate DESC LIMIT {count}";
+            
+            using (MySqlConnection conn = DatabaseHelper.GetConnection())
+            {
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                using (MySqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        announcements.Add(new Announcement
+                        {
+                            Id = reader.GetInt32("Id"),
+                            Title = reader.GetString("Title"),
+                            Message = reader.GetString("Message"),
+                            CreatedDate = reader.GetDateTime("CreatedDate"),
+                            CreatedBy = reader.GetInt32("CreatedBy")
+                        });
+                    }
+                }
+            }
+            return announcements;
+        }
+
+        public static bool CreateAnnouncement(Announcement announcement)
+        {
+            string query = @"INSERT INTO Announcements (Title, Message, CreatedBy) 
+                            VALUES (@Title, @Message, @CreatedBy)";
+            
+            using (MySqlConnection conn = DatabaseHelper.GetConnection())
+            {
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@Title", announcement.Title);
+                    cmd.Parameters.AddWithValue("@Message", announcement.Message);
+                    cmd.Parameters.AddWithValue("@CreatedBy", announcement.CreatedBy);
+                    
+                    return cmd.ExecuteNonQuery() > 0;
+                }
+            }
+        }
+
+        public static bool DeleteAnnouncement(int announcementId)
+        {
+            string query = "DELETE FROM Announcements WHERE Id = @Id";
+            using (MySqlConnection conn = DatabaseHelper.GetConnection())
+            {
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@Id", announcementId);
+                    return cmd.ExecuteNonQuery() > 0;
+                }
+            }
+        }
+
+        // ============================================
+        // Notification Methods
+        // ============================================
 
         public static bool CreateNotification(Notification notification)
         {
-            try
+            string query = @"INSERT INTO Notifications (UserId, Title, Message, Type, Category, CreatedBy) 
+                            VALUES (@UserId, @Title, @Message, @Type, @Category, @CreatedBy)";
+            
+            using (MySqlConnection conn = DatabaseHelper.GetConnection())
             {
-                notification.Id = notifications.Count > 0 ? notifications.Max(n => n.Id) + 1 : 1;
-                notification.CreatedDate = DateTime.Now;
-                notification.IsRead = false;
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@UserId", notification.UserId);
+                    cmd.Parameters.AddWithValue("@Title", notification.Title);
+                    cmd.Parameters.AddWithValue("@Message", notification.Message);
+                    cmd.Parameters.AddWithValue("@Type", notification.Type);
+                    cmd.Parameters.AddWithValue("@Category", notification.Category);
+                    cmd.Parameters.AddWithValue("@CreatedBy", notification.CreatedBy);
+                    
+                    return cmd.ExecuteNonQuery() > 0;
+                }
+            }
+        }
 
-                notifications.Add(notification);
-                SaveNotifications();
-                return true;
-            }
-            catch
+        public static List<Notification> GetUserNotifications(int userId, bool unreadOnly = false)
+        {
+            List<Notification> notifications = new List<Notification>();
+            string query = unreadOnly 
+                ? "SELECT * FROM Notifications WHERE UserId = @UserId AND IsRead = FALSE ORDER BY CreatedDate DESC" 
+                : "SELECT * FROM Notifications WHERE UserId = @UserId ORDER BY CreatedDate DESC";
+            
+            using (MySqlConnection conn = DatabaseHelper.GetConnection())
             {
-                return false;
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@UserId", userId);
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            notifications.Add(new Notification
+                            {
+                                Id = reader.GetInt32("Id"),
+                                UserId = reader.GetInt32("UserId"),
+                                Title = reader.GetString("Title"),
+                                Message = reader.GetString("Message"),
+                                Type = reader.GetString("Type"),
+                                Category = reader.GetString("Category"),
+                                IsRead = reader.GetBoolean("IsRead"),
+                                CreatedDate = reader.GetDateTime("CreatedDate"),
+                                CreatedBy = reader.IsDBNull(reader.GetOrdinal("CreatedBy")) ? 0 : reader.GetInt32("CreatedBy")
+                            });
+                        }
+                    }
+                }
             }
+            return notifications;
         }
 
         public static int GetUnreadNotificationCount(int userId)
         {
-            try
+            string query = "SELECT COUNT(*) FROM Notifications WHERE UserId = @UserId AND IsRead = FALSE";
+            using (MySqlConnection conn = DatabaseHelper.GetConnection())
             {
-                return notifications.Count(n => n.UserId == userId && !n.IsRead);
-            }
-            catch
-            {
-                return 0;
-            }
-        }
-
-        public static List<Notification> GetUserNotifications(int userId, int limit = 50)
-        {
-            try
-            {
-                return notifications.Where(n => n.UserId == userId)
-                    .OrderByDescending(n => n.CreatedDate)
-                    .Take(limit)
-                    .ToList();
-            }
-            catch
-            {
-                return new List<Notification>();
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@UserId", userId);
+                    return Convert.ToInt32(cmd.ExecuteScalar());
+                }
             }
         }
 
-        public static List<Notification> GetUserNotifications(int userId, bool unreadOnly)
+        public static bool MarkNotificationAsRead(int notificationId)
         {
-            try
+            string query = "UPDATE Notifications SET IsRead = TRUE WHERE Id = @Id";
+            using (MySqlConnection conn = DatabaseHelper.GetConnection())
             {
-                var query = notifications.Where(n => n.UserId == userId);
-                if (unreadOnly)
-                    query = query.Where(n => !n.IsRead);
-
-                return query.OrderByDescending(n => n.CreatedDate).ToList();
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@Id", notificationId);
+                    return cmd.ExecuteNonQuery() > 0;
+                }
             }
-            catch
+        }
+
+        // ============================================
+        // Additional Notification Methods
+        // ============================================
+
+        public static bool MarkAllNotificationsRead(int userId)
+        {
+            string query = "UPDATE Notifications SET IsRead = TRUE WHERE UserId = @UserId";
+            using (MySqlConnection conn = DatabaseHelper.GetConnection())
             {
-                return new List<Notification>();
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@UserId", userId);
+                    return cmd.ExecuteNonQuery() > 0;
+                }
             }
         }
 
         public static bool MarkNotificationRead(int notificationId)
         {
-            try
+            string query = "UPDATE Notifications SET IsRead = TRUE WHERE Id = @Id";
+            using (MySqlConnection conn = DatabaseHelper.GetConnection())
             {
-                var notification = notifications.FirstOrDefault(n => n.Id == notificationId);
-                if (notification != null)
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
-                    notification.IsRead = true;
-                    notification.ReadDate = DateTime.Now;
-                    SaveNotifications();
-                    return true;
-                }
-                return false;
-            }
-            catch
-            {
-                return false;
-            }
-        }
-
-        public static bool MarkNotificationAsRead(int notificationId, int userId)
-        {
-            try
-            {
-                var notification = notifications.FirstOrDefault(n => n.Id == notificationId && n.UserId == userId);
-                if (notification != null)
-                {
-                    notification.IsRead = true;
-                    notification.ReadDate = DateTime.Now;
-                    SaveNotifications();
-                    return true;
-                }
-                return false;
-            }
-            catch
-            {
-                return false;
-            }
-        }
-
-        public static bool MarkAllNotificationsRead(int userId)
-        {
-            try
-            {
-                var userNotifications = notifications.Where(n => n.UserId == userId && !n.IsRead);
-                foreach (var notification in userNotifications)
-                {
-                    notification.IsRead = true;
-                    notification.ReadDate = DateTime.Now;
-                }
-                SaveNotifications();
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
-        }
-
-        #endregion
-
-        #region News
-
-        private static void LoadNews()
-        {
-            try
-            {
-                if (File.Exists(newsFile))
-                {
-                    var json = File.ReadAllText(newsFile);
-                    if (!string.IsNullOrWhiteSpace(json))
-                    {
-                        newsList = JsonConvert.DeserializeObject<List<News>>(json) ?? new List<News>();
-                    }
-                }
-                else
-                {
-                    CreateSampleNews();
+                    cmd.Parameters.AddWithValue("@Id", notificationId);
+                    return cmd.ExecuteNonQuery() > 0;
                 }
             }
-            catch
-            {
-                newsList = new List<News>();
-                CreateSampleNews();
-            }
         }
 
-        private static void CreateSampleNews()
-        {
-            newsList = new List<News>
-                {
-                    new News
-                    {
-                        Id = 1,
-                        Title = "Welcome to the New Barangay Portal",
-                        Content = "We are excited to announce the launch of our new digital barangay management system. This platform will help residents access services more efficiently and stay updated with community news.",
-                        Summary = "New digital platform launched for better community service.",
-                        Category = "Announcement",
-                        PublishDate = DateTime.Now.AddDays(-7),
-                        CreatedDate = DateTime.Now.AddDays(-7),
-                        IsPublished = true,
-                        ViewCount = 25
-                    },
-                    new News
-                    {
-                        Id = 2,
-                        Title = "Community Clean-up Drive This Weekend",
-                        Content = "Join us this Saturday, 8:00 AM at the barangay hall for our monthly community clean-up drive. Bring your gloves and let's work together to keep our community clean and green!",
-                        Summary = "Monthly community clean-up this Saturday.",
-                        Category = "Event",
-                        PublishDate = DateTime.Now.AddDays(-3),
-                        CreatedDate = DateTime.Now.AddDays(-3),
-                        IsPublished = true,
-                        ViewCount = 18
-                    }
-                };
-            SaveNews();
-        }
+        // ============================================
+        // Additional News Methods
+        // ============================================
 
-        private static void SaveNews()
+        public static System.Collections.Generic.List<News> GetPublishedNews()
         {
-            try
-            {
-                var json = JsonConvert.SerializeObject(newsList, Formatting.Indented);
-                File.WriteAllText(newsFile, json);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error saving news: {ex.Message}", "Error");
-            }
-        }
-
-        public static List<News> GetPublishedNews()
-        {
-            try
-            {
-                return newsList.Where(n => n.IsPublished)
-                    .OrderByDescending(n => n.PublishDate)
-                    .ToList();
-            }
-            catch
-            {
-                return new List<News>();
-            }
-        }
-
-        public static List<News> GetAllNews()
-        {
-            try
-            {
-                return newsList.OrderByDescending(n => n.CreatedDate).ToList();
-            }
-            catch
-            {
-                return new List<News>();
-            }
-        }
-
-        public static bool CreateNews(News news)
-        {
-            try
-            {
-                news.Id = newsList.Count > 0 ? newsList.Max(n => n.Id) + 1 : 1;
-                news.CreatedDate = DateTime.Now;
-                news.PublishDate = DateTime.Now;
-                newsList.Add(news);
-                SaveNews();
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
-        }
-
-        public static bool UpdateNews(News news)
-        {
-            try
-            {
-                var existingNews = newsList.FirstOrDefault(n => n.Id == news.Id);
-                if (existingNews != null)
-                {
-                    existingNews.Title = news.Title;
-                    existingNews.Content = news.Content;
-                    existingNews.Summary = news.Summary;
-                    existingNews.Category = news.Category;
-                    existingNews.IsPublished = news.IsPublished;
-                    SaveNews();
-                    return true;
-                }
-                return false;
-            }
-            catch
-            {
-                return false;
-            }
+            return GetAllNews().Where(n => n.PublishedDate <= DateTime.Now).ToList();
         }
 
         public static bool IncrementNewsViewCount(int newsId)
         {
-            try
+            string query = "UPDATE News SET ViewCount = ViewCount + 1 WHERE Id = @Id";
+            using (MySqlConnection conn = DatabaseHelper.GetConnection())
             {
-                var news = newsList.FirstOrDefault(n => n.Id == newsId);
-                if (news != null)
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
-                    news.ViewCount++;
-                    SaveNews();
-                    return true;
-                }
-                return false;
-            }
-            catch
-            {
-                return false;
-            }
-        }
-
-        #endregion
-
-        #region Officials
-
-        private static void LoadOfficials()
-        {
-            try
-            {
-                if (File.Exists(officialsFile))
-                {
-                    var json = File.ReadAllText(officialsFile);
-                    if (!string.IsNullOrWhiteSpace(json))
-                    {
-                        officials = JsonConvert.DeserializeObject<List<BarangayOfficial>>(json) ?? new List<BarangayOfficial>();
-                    }
-                }
-                else
-                {
-                    CreateSampleOfficials();
+                    cmd.Parameters.AddWithValue("@Id", newsId);
+                    return cmd.ExecuteNonQuery() > 0;
                 }
             }
-            catch
-            {
-                officials = new List<BarangayOfficial>();
-                CreateSampleOfficials();
-            }
         }
 
-        private static void CreateSampleOfficials()
+        // ============================================
+        // Activity Log Methods
+        // ============================================
+
+        public static bool LogActivity(int userId, string action, string module, string description)
         {
-            officials = new List<BarangayOfficial>
+            string query = @"INSERT INTO ActivityLogs (UserId, Action, Module, Description) 
+                            VALUES (@UserId, @Action, @Module, @Description)";
+            
+            using (MySqlConnection conn = DatabaseHelper.GetConnection())
+            {
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
-                    new BarangayOfficial
-                    {
-                        Id = 1,
-                        FullName = "Juan dela Cruz",
-                        Position = "Barangay Captain",
-                        Department = "Executive",
-                        ContactNumber = "0917-123-4567",
-                        Email = "captain@barangay.gov",
-                        Address = "123 Main Street",
-                        StartDate = DateTime.Now.AddYears(-2),
-                        IsActive = true,
-                        Responsibilities = "Overall leadership and administration of barangay affairs",
-                        CreatedDate = DateTime.Now.AddYears(-2)
-                    },
-                    new BarangayOfficial
-                    {
-                        Id = 2,
-                        FullName = "Maria Santos",
-                        Position = "Barangay Secretary",
-                        Department = "Administrative",
-                        ContactNumber = "0917-234-5678",
-                        Email = "secretary@barangay.gov",
-                        Address = "456 Second Street",
-                        StartDate = DateTime.Now.AddYears(-2),
-                        IsActive = true,
-                        Responsibilities = "Record keeping and administrative support",
-                        CreatedDate = DateTime.Now.AddYears(-2)
-                    }
-                };
-            SaveOfficials();
-        }
-
-        private static void SaveOfficials()
-        {
-            try
-            {
-                var json = JsonConvert.SerializeObject(officials, Formatting.Indented);
-                File.WriteAllText(officialsFile, json);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error saving officials: {ex.Message}", "Error");
+                    cmd.Parameters.AddWithValue("@UserId", userId);
+                    cmd.Parameters.AddWithValue("@Action", action);
+                    cmd.Parameters.AddWithValue("@Module", module);
+                    cmd.Parameters.AddWithValue("@Description", description);
+                    
+                    return cmd.ExecuteNonQuery() > 0;
+                }
             }
         }
 
-        public static List<BarangayOfficial> GetAllOfficials(bool activeOnly = false)
+        public static List<ActivityLog> GetRecentActivityLogs(int count = 10)
         {
-            try
+            List<ActivityLog> logs = new List<ActivityLog>();
+            string query = $"SELECT * FROM ActivityLogs ORDER BY CreatedDate DESC LIMIT {count}";
+            
+            using (MySqlConnection conn = DatabaseHelper.GetConnection())
             {
-                return officials.Where(o => !activeOnly || o.IsActive)
-                    .OrderBy(o => o.Id)
-                    .ToList();
-            }
-            catch
-            {
-                return new List<BarangayOfficial>();
-            }
-        }
-
-        public static bool CreateOfficial(BarangayOfficial official)
-        {
-            try
-            {
-                official.Id = officials.Count > 0 ? officials.Max(o => o.Id) + 1 : 1;
-                official.CreatedDate = DateTime.Now;
-                official.IsActive = true;
-                officials.Add(official);
-                SaveOfficials();
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
-        }
-
-        #endregion
-
-        #region Blotters
-
-        private static void LoadBlotters()
-        {
-            try
-            {
-                if (File.Exists(blottersFile))
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                using (MySqlDataReader reader = cmd.ExecuteReader())
                 {
-                    var json = File.ReadAllText(blottersFile);
-                    if (!string.IsNullOrWhiteSpace(json))
+                    while (reader.Read())
                     {
-                        blotters = JsonConvert.DeserializeObject<List<Blotter>>(json) ?? new List<Blotter>();
+                        logs.Add(new ActivityLog
+                        {
+                            Id = reader.GetInt32("Id"),
+                            UserId = reader.GetInt32("UserId"),
+                            Action = reader.GetString("Action"),
+                            Module = reader.GetString("Module"),
+                            Description = reader.IsDBNull(reader.GetOrdinal("Description")) ? null : reader.GetString("Description"),
+                            CreatedDate = reader.GetDateTime("CreatedDate")
+                        });
                     }
                 }
             }
-            catch
-            {
-                blotters = new List<Blotter>();
-            }
+            return logs;
         }
 
-        private static void SaveBlotters()
+        public static List<ActivityLog> GetActivityLogsByDateRange(DateTime startDate, DateTime endDate)
         {
-            try
+            List<ActivityLog> logs = new List<ActivityLog>();
+            string query = "SELECT * FROM ActivityLogs WHERE CreatedDate BETWEEN @StartDate AND @EndDate ORDER BY CreatedDate DESC";
+            
+            using (MySqlConnection conn = DatabaseHelper.GetConnection())
             {
-                var json = JsonConvert.SerializeObject(blotters, Formatting.Indented);
-                File.WriteAllText(blottersFile, json);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error saving blotters: {ex.Message}", "Error");
-            }
-        }
-
-        public static bool CreateBlotter(Blotter blotter)
-        {
-            try
-            {
-                blotter.Id = blotters.Count > 0 ? blotters.Max(b => b.Id) + 1 : 1;
-                blotter.CreatedDate = DateTime.Now;
-                blotter.Status = "Filed";
-                blotters.Add(blotter);
-                SaveBlotters();
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
-        }
-
-        public static List<Blotter> GetAllBlotters()
-        {
-            try
-            {
-                return blotters.OrderByDescending(b => b.CreatedDate).ToList();
-            }
-            catch
-            {
-                return new List<Blotter>();
-            }
-        }
-
-        public static bool UpdateBlotterStatus(int blotterId, string status, string resolution, int updatedBy)
-        {
-            try
-            {
-                var blotter = blotters.FirstOrDefault(b => b.Id == blotterId);
-                if (blotter != null)
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
-                    blotter.Status = status;
-                    blotter.Resolution = resolution;
-                    if (status == "Resolved")
+                    cmd.Parameters.AddWithValue("@StartDate", startDate);
+                    cmd.Parameters.AddWithValue("@EndDate", endDate);
+                    
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
                     {
-                        blotter.ResolvedDate = DateTime.Now;
-                        blotter.ResolvedBy = updatedBy;
-                    }
-                    SaveBlotters();
-                    return true;
-                }
-                return false;
-            }
-            catch
-            {
-                return false;
-            }
-        }
-
-        #endregion
-
-        #region Activities & Logging
-
-        private static void LoadActivities()
-        {
-            try
-            {
-                if (File.Exists(activitiesFile))
-                {
-                    var json = File.ReadAllText(activitiesFile);
-                    if (!string.IsNullOrWhiteSpace(json))
-                    {
-                        activities = JsonConvert.DeserializeObject<List<ActivityLog>>(json) ?? new List<ActivityLog>();
+                        while (reader.Read())
+                        {
+                            logs.Add(new ActivityLog
+                            {
+                                Id = reader.GetInt32("Id"),
+                                UserId = reader.GetInt32("UserId"),
+                                Action = reader.GetString("Action"),
+                                Module = reader.GetString("Module"),
+                                Description = reader.IsDBNull(reader.GetOrdinal("Description")) ? null : reader.GetString("Description"),
+                                CreatedDate = reader.GetDateTime("CreatedDate")
+                            });
+                        }
                     }
                 }
             }
-            catch
-            {
-                activities = new List<ActivityLog>();
-            }
+            return logs;
         }
 
-        private static void SaveActivities()
-        {
-            try
-            {
-                var json = JsonConvert.SerializeObject(activities, Formatting.Indented);
-                File.WriteAllText(activitiesFile, json);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error saving activities: {ex.Message}", "Error");
-            }
-        }
-
-        public static void LogActivity(int userId, string action, string category, string description)
-        {
-            try
-            {
-                var activity = new ActivityLog
-                {
-                    Id = activities.Count + 1,
-                    UserId = userId,
-                    Action = action,
-                    Module = category,
-                    Description = description,
-                    CreatedDate = DateTime.Now
-                };
-
-                activities.Add(activity);
-
-                // Keep only last 1000 activities
-                if (activities.Count > 1000)
-                {
-                    activities = activities.Skip(activities.Count - 1000).ToList();
-                }
-
-                SaveActivities();
-            }
-            catch (Exception ex)
-            {
-                try
-                {
-                    File.AppendAllText(Path.Combine(dataFolder, "error.log"),
-                        $"{DateTime.Now}: Error logging activity - {ex.Message}\n");
-                }
-                catch
-                {
-                    // Ignore if can't write to error log
-                }
-            }
-        }
-
-        public static List<ActivityLog> GetActivityLogs(int? userId = null, int days = 7)
-        {
-            try
-            {
-                var query = activities.AsQueryable();
-
-                if (userId.HasValue)
-                    query = query.Where(a => a.UserId == userId.Value);
-
-                var fromDate = DateTime.Now.AddDays(-days);
-                query = query.Where(a => a.CreatedDate >= fromDate);
-
-                return query.OrderByDescending(a => a.CreatedDate).ToList();
-            }
-            catch
-            {
-                return new List<ActivityLog>();
-            }
-        }
-
-        #endregion
-
-        #region Settings
-
-        private static void LoadSettings()
-        {
-            try
-            {
-                if (File.Exists(settingsFile))
-                {
-                    var json = File.ReadAllText(settingsFile);
-                    if (!string.IsNullOrWhiteSpace(json))
-                    {
-                        systemSettings = JsonConvert.DeserializeObject<SystemSettings>(json);
-                    }
-                }
-
-                if (systemSettings == null)
-                {
-                    CreateDefaultSettings();
-                }
-            }
-            catch
-            {
-                CreateDefaultSettings();
-            }
-        }
-
-        private static void CreateDefaultSettings()
-        {
-            systemSettings = new SystemSettings
-            {
-                Id = 1,
-                BarangayName = "Sample Barangay",
-                Address = "123 Main Street, City, Province",
-                ContactNumber = "0917-123-4567",
-                Email = "info@barangay.gov",
-                Captain = "Juan dela Cruz",
-                Secretary = "Maria Santos",
-                Treasurer = "Pedro Reyes",
-                ServiceFees = new Dictionary<string, decimal>
-                    {
-                        { "Barangay Clearance", 50.00m },
-                        { "Certificate of Residency", 30.00m },
-                        { "Certificate of Indigency", 25.00m },
-                        { "Business Permit", 100.00m },
-                        { "Barangay ID", 75.00m },
-                        { "Other Documents", 50.00m }
-                    },
-                EnableNotifications = true,
-                EnableSMSNotifications = false,
-                EnableEmailNotifications = false,
-                LastUpdated = DateTime.Now,
-                UpdatedBy = 1
-            };
-            SaveSettings();
-        }
-
-        private static void SaveSettings()
-        {
-            try
-            {
-                var json = JsonConvert.SerializeObject(systemSettings, Formatting.Indented);
-                File.WriteAllText(settingsFile, json);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error saving settings: {ex.Message}", "Error");
-            }
-        }
+        // ============================================
+        // System Settings Methods
+        // ============================================
 
         public static SystemSettings GetSystemSettings()
         {
-            return systemSettings ?? new SystemSettings();
+            SystemSettings settings = new SystemSettings
+            {
+                ServiceFees = new Dictionary<string, decimal>()
+            };
+
+            string query = "SELECT SettingKey, SettingValue FROM SystemSettings";
+            
+            using (MySqlConnection conn = DatabaseHelper.GetConnection())
+            {
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                using (MySqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        string key = reader.GetString("SettingKey");
+                        string value = reader.IsDBNull(reader.GetOrdinal("SettingValue")) ? null : reader.GetString("SettingValue");
+
+                        switch (key)
+                        {
+                            case "BarangayName":
+                                settings.BarangayName = value;
+                                break;
+                            case "BarangayAddress":
+                                settings.BarangayAddress = value;
+                                break;
+                            case "ContactNumber":
+                                settings.ContactNumber = value;
+                                break;
+                            case "EmailAddress":
+                                settings.EmailAddress = value;
+                                break;
+                            case "ServiceFees":
+                                if (!string.IsNullOrEmpty(value))
+                                {
+                                    try
+                                    {
+                                        settings.ServiceFees = JsonConvert.DeserializeObject<Dictionary<string, decimal>>(value);
+                                    }
+                                    catch
+                                    {
+                                        settings.ServiceFees = new Dictionary<string, decimal>();
+                                    }
+                                }
+                                break;
+                        }
+                    }
+                }
+            }
+            return settings;
         }
 
         public static bool UpdateSystemSettings(SystemSettings settings)
         {
             try
             {
-                settings.LastUpdated = DateTime.Now;
-                systemSettings = settings;
-                SaveSettings();
+                using (MySqlConnection conn = DatabaseHelper.GetConnection())
+                {
+                    conn.Open();
+                    
+                    UpdateSetting(conn, "BarangayName", settings.BarangayName);
+                    UpdateSetting(conn, "BarangayAddress", settings.BarangayAddress);
+                    UpdateSetting(conn, "ContactNumber", settings.ContactNumber);
+                    UpdateSetting(conn, "EmailAddress", settings.EmailAddress);
+                    
+                    if (settings.ServiceFees != null)
+                    {
+                        string serviceFeesJson = JsonConvert.SerializeObject(settings.ServiceFees);
+                        UpdateSetting(conn, "ServiceFees", serviceFeesJson);
+                    }
+                }
                 return true;
             }
             catch
@@ -745,6 +502,15 @@ namespace BarangayManagementSystem.Data
             }
         }
 
-        #endregion
+        private static void UpdateSetting(MySqlConnection conn, string key, string value)
+        {
+            string query = @"UPDATE SystemSettings SET SettingValue = @Value WHERE SettingKey = @Key";
+            using (MySqlCommand cmd = new MySqlCommand(query, conn))
+            {
+                cmd.Parameters.AddWithValue("@Key", key);
+                cmd.Parameters.AddWithValue("@Value", value);
+                cmd.ExecuteNonQuery();
+            }
+        }
     }
 }

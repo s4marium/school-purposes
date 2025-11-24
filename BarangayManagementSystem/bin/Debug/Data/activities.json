@@ -498,5 +498,25 @@
     "Details": null,
     "CreatedDate": "2025-11-08T17:25:55.8159734+08:00",
     "IPAddress": null
+  },
+  {
+    "Id": 51,
+    "UserId": 1,
+    "Action": "Login",
+    "Module": "Authentication",
+    "Description": "User admin logged in successfully",
+    "Details": null,
+    "CreatedDate": "2025-11-25T00:31:36.0948779+08:00",
+    "IPAddress": null
+  },
+  {
+    "Id": 52,
+    "UserId": 1,
+    "Action": "Login",
+    "Module": "Dashboard",
+    "Description": "Admin logged in",
+    "Details": null,
+    "CreatedDate": "2025-11-25T00:31:36.2349186+08:00",
+    "IPAddress": null
   }
 ]

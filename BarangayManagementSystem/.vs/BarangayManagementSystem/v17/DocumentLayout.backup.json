@@ -1,14 +1,78 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\BarangayManagementSystem\\",
+  "WorkspaceRootPath": "C:\\Users\\samarium\\Desktop\\school-purposes\\BarangayManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|c:\\users\\samarium\\source\\repos\\s4marium\\school-purposes\\barangaymanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|c:\\users\\samarium\\desktop\\school-purposes\\barangaymanagementsystem\\models\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|solutionrelative:models\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|c:\\users\\samarium\\desktop\\school-purposes\\barangaymanagementsystem\\data\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|solutionrelative:data\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|c:\\users\\samarium\\desktop\\school-purposes\\barangaymanagementsystem\\data\\enhanceddatabasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|solutionrelative:data\\enhanceddatabasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|c:\\users\\samarium\\desktop\\school-purposes\\barangaymanagementsystem\\models\\news.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|solutionrelative:models\\news.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|c:\\users\\samarium\\desktop\\school-purposes\\barangaymanagementsystem\\controls\\notificationpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|solutionrelative:controls\\notificationpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|c:\\users\\samarium\\desktop\\school-purposes\\barangaymanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|c:\\users\\samarium\\source\\repos\\s4marium\\school-purposes\\barangaymanagementsystem\\forms\\enhanceduserdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|solutionrelative:forms\\enhanceduserdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|c:\\users\\samarium\\desktop\\school-purposes\\barangaymanagementsystem\\forms\\user\\newsviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|solutionrelative:forms\\user\\newsviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|c:\\users\\samarium\\desktop\\school-purposes\\barangaymanagementsystem\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|c:\\users\\samarium\\desktop\\school-purposes\\barangaymanagementsystem\\models\\announcement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|solutionrelative:models\\announcement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|c:\\users\\samarium\\desktop\\school-purposes\\barangaymanagementsystem\\models\\extendedmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|solutionrelative:models\\extendedmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|c:\\users\\samarium\\desktop\\school-purposes\\barangaymanagementsystem\\models\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|solutionrelative:models\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|c:\\users\\samarium\\desktop\\school-purposes\\barangaymanagementsystem\\forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|solutionrelative:forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|c:\\users\\samarium\\desktop\\school-purposes\\barangaymanagementsystem\\forms\\admin\\requestmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|solutionrelative:forms\\admin\\requestmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|c:\\users\\samarium\\desktop\\school-purposes\\barangaymanagementsystem\\models\\activitylog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|solutionrelative:models\\activitylog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|c:\\users\\samarium\\desktop\\school-purposes\\barangaymanagementsystem\\models\\systemsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|solutionrelative:models\\systemsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|c:\\users\\samarium\\desktop\\school-purposes\\barangaymanagementsystem\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|c:\\users\\samarium\\desktop\\school-purposes\\barangaymanagementsystem\\database\\createdatabase.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|solutionrelative:database\\createdatabase.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|c:\\users\\samarium\\desktop\\school-purposes\\barangaymanagementsystem\\database\\createdatabase.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{FD7F9200-AD54-4245-B2A1-318803FF0901}|BarangayManagementSystem.csproj|solutionrelative:database\\createdatabase.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,21 +82,8 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\BarangayManagementSystem\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\BarangayManagementSystem\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T12:56:15.37Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -42,16 +93,227 @@
               "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NotificationPanel.cs",
+              "DocumentMoniker": "C:\\Users\\samarium\\Desktop\\school-purposes\\BarangayManagementSystem\\Controls\\NotificationPanel.cs",
+              "RelativeDocumentMoniker": "Controls\\NotificationPanel.cs",
+              "ToolTip": "C:\\Users\\samarium\\Desktop\\school-purposes\\BarangayManagementSystem\\Controls\\NotificationPanel.cs",
+              "RelativeToolTip": "Controls\\NotificationPanel.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAD4vwcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T17:45:47.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\samarium\\Desktop\\school-purposes\\BarangayManagementSystem\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\samarium\\Desktop\\school-purposes\\BarangayManagementSystem\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAYwBAAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T17:52:22.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NewsViewForm.cs",
+              "DocumentMoniker": "C:\\Users\\samarium\\Desktop\\school-purposes\\BarangayManagementSystem\\Forms\\User\\NewsViewForm.cs",
+              "RelativeDocumentMoniker": "Forms\\User\\NewsViewForm.cs",
+              "ToolTip": "C:\\Users\\samarium\\Desktop\\school-purposes\\BarangayManagementSystem\\Forms\\User\\NewsViewForm.cs",
+              "RelativeToolTip": "Forms\\User\\NewsViewForm.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAkwGcAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T17:50:18.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Report.cs",
+              "DocumentMoniker": "C:\\Users\\samarium\\Desktop\\school-purposes\\BarangayManagementSystem\\Models\\Report.cs",
+              "RelativeDocumentMoniker": "Models\\Report.cs",
+              "ToolTip": "C:\\Users\\samarium\\Desktop\\school-purposes\\BarangayManagementSystem\\Models\\Report.cs",
+              "RelativeToolTip": "Models\\Report.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAowA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T17:48:02.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Request.cs",
+              "DocumentMoniker": "C:\\Users\\samarium\\Desktop\\school-purposes\\BarangayManagementSystem\\Models\\Request.cs",
+              "RelativeDocumentMoniker": "Models\\Request.cs",
+              "ToolTip": "C:\\Users\\samarium\\Desktop\\school-purposes\\BarangayManagementSystem\\Models\\Request.cs",
+              "RelativeToolTip": "Models\\Request.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T17:47:58.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ExtendedModels.cs",
+              "DocumentMoniker": "C:\\Users\\samarium\\Desktop\\school-purposes\\BarangayManagementSystem\\Models\\ExtendedModels.cs",
+              "RelativeDocumentMoniker": "Models\\ExtendedModels.cs",
+              "ToolTip": "C:\\Users\\samarium\\Desktop\\school-purposes\\BarangayManagementSystem\\Models\\ExtendedModels.cs",
+              "RelativeToolTip": "Models\\ExtendedModels.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAAwD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T17:47:46.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\samarium\\Desktop\\school-purposes\\BarangayManagementSystem\\App.config",
+              "RelativeDocumentMoniker": "App.config",
+              "ToolTip": "C:\\Users\\samarium\\Desktop\\school-purposes\\BarangayManagementSystem\\App.config",
+              "RelativeToolTip": "App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-11-24T17:40:12.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RequestManagementForm.cs",
+              "DocumentMoniker": "C:\\Users\\samarium\\Desktop\\school-purposes\\BarangayManagementSystem\\Forms\\Admin\\RequestManagementForm.cs",
+              "RelativeDocumentMoniker": "Forms\\Admin\\RequestManagementForm.cs",
+              "ToolTip": "C:\\Users\\samarium\\Desktop\\school-purposes\\BarangayManagementSystem\\Forms\\Admin\\RequestManagementForm.cs",
+              "RelativeToolTip": "Forms\\Admin\\RequestManagementForm.cs",
+              "ViewState": "AgIAACoBAAAAAAAAAAAjwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T17:39:48.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RegisterForm.cs",
+              "DocumentMoniker": "C:\\Users\\samarium\\Desktop\\school-purposes\\BarangayManagementSystem\\Forms\\RegisterForm.cs",
+              "RelativeDocumentMoniker": "Forms\\RegisterForm.cs",
+              "ToolTip": "C:\\Users\\samarium\\Desktop\\school-purposes\\BarangayManagementSystem\\Forms\\RegisterForm.cs",
+              "RelativeToolTip": "Forms\\RegisterForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T17:39:28.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ActivityLog.cs",
+              "DocumentMoniker": "C:\\Users\\samarium\\Desktop\\school-purposes\\BarangayManagementSystem\\Models\\ActivityLog.cs",
+              "RelativeDocumentMoniker": "Models\\ActivityLog.cs",
+              "ToolTip": "C:\\Users\\samarium\\Desktop\\school-purposes\\BarangayManagementSystem\\Models\\ActivityLog.cs",
+              "RelativeToolTip": "Models\\ActivityLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T17:39:24.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Announcement.cs",
+              "DocumentMoniker": "C:\\Users\\samarium\\Desktop\\school-purposes\\BarangayManagementSystem\\Models\\Announcement.cs",
+              "RelativeDocumentMoniker": "Models\\Announcement.cs",
+              "ToolTip": "C:\\Users\\samarium\\Desktop\\school-purposes\\BarangayManagementSystem\\Models\\Announcement.cs",
+              "RelativeToolTip": "Models\\Announcement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T17:39:11.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\samarium\\Desktop\\school-purposes\\BarangayManagementSystem\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\samarium\\Desktop\\school-purposes\\BarangayManagementSystem\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA8wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T17:38:53.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EnhancedDatabaseHelper.cs",
+              "DocumentMoniker": "C:\\Users\\samarium\\Desktop\\school-purposes\\BarangayManagementSystem\\Data\\EnhancedDatabaseHelper.cs",
+              "RelativeDocumentMoniker": "Data\\EnhancedDatabaseHelper.cs",
+              "ToolTip": "C:\\Users\\samarium\\Desktop\\school-purposes\\BarangayManagementSystem\\Data\\EnhancedDatabaseHelper.cs",
+              "RelativeToolTip": "Data\\EnhancedDatabaseHelper.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAAPkBAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T17:36:54.368Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EnhancedUserDashboard.cs",
-              "DocumentMoniker": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\BarangayManagementSystem\\Forms\\EnhancedUserDashboard.cs",
-              "RelativeDocumentMoniker": "Forms\\EnhancedUserDashboard.cs",
-              "ToolTip": "C:\\Users\\samarium\\source\\repos\\s4marium\\school-purposes\\BarangayManagementSystem\\Forms\\EnhancedUserDashboard.cs",
-              "RelativeToolTip": "Forms\\EnhancedUserDashboard.cs",
-              "ViewState": "AgIAAJ8GAAAAAAAAAAAQwL4GAAABAAAAAAAAAA==",
+              "Title": "DatabaseHelper.cs",
+              "DocumentMoniker": "C:\\Users\\samarium\\Desktop\\school-purposes\\BarangayManagementSystem\\Data\\DatabaseHelper.cs",
+              "RelativeDocumentMoniker": "Data\\DatabaseHelper.cs",
+              "ToolTip": "C:\\Users\\samarium\\Desktop\\school-purposes\\BarangayManagementSystem\\Data\\DatabaseHelper.cs",
+              "RelativeToolTip": "Data\\DatabaseHelper.cs",
+              "ViewState": "AgIAAAQBAAAAAAAAAAAkwBABAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T15:35:27.348Z",
+              "WhenOpened": "2025-11-24T17:35:59.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CreateDatabase.sql ",
+              "DocumentMoniker": "C:\\Users\\samarium\\Desktop\\school-purposes\\BarangayManagementSystem\\Database\\CreateDatabase.sql",
+              "RelativeDocumentMoniker": "Database\\CreateDatabase.sql",
+              "ToolTip": "C:\\Users\\samarium\\Desktop\\school-purposes\\BarangayManagementSystem\\Database\\CreateDatabase.sql",
+              "RelativeToolTip": "Database\\CreateDatabase.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002897|",
+              "WhenOpened": "2025-11-24T17:33:09.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "News.cs",
+              "DocumentMoniker": "C:\\Users\\samarium\\Desktop\\school-purposes\\BarangayManagementSystem\\Models\\News.cs",
+              "RelativeDocumentMoniker": "Models\\News.cs",
+              "ToolTip": "C:\\Users\\samarium\\Desktop\\school-purposes\\BarangayManagementSystem\\Models\\News.cs",
+              "RelativeToolTip": "Models\\News.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAmwA4AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T17:32:55.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SystemSettings.cs",
+              "DocumentMoniker": "C:\\Users\\samarium\\Desktop\\school-purposes\\BarangayManagementSystem\\Models\\SystemSettings.cs",
+              "RelativeDocumentMoniker": "Models\\SystemSettings.cs",
+              "ToolTip": "C:\\Users\\samarium\\Desktop\\school-purposes\\BarangayManagementSystem\\Models\\SystemSettings.cs",
+              "RelativeToolTip": "Models\\SystemSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T17:32:49.8Z",
               "EditorCaption": ""
             }
           ]

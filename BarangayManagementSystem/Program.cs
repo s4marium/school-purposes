@@ -16,8 +16,8 @@ namespace BarangayManagementSystem
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             
-            // Initialize database
-            DatabaseHelper.InitializeDatabase();
+            // Initialize database - Commented out as method doesn't exist
+            // DatabaseHelper.InitializeDatabase();
             
             // Create Images directory if it doesn't exist
             if (!System.IO.Directory.Exists("Images"))

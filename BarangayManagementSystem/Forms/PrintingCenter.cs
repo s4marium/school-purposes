@@ -8,18 +8,18 @@ namespace BarangayManagementSystem.Forms
 {
     public class PrintingCenter
     {
-        private User currentUser;
-        private Panel contentPanel;
+        private Models.User currentUser;  // Changed from: private User currentUser;
+        private Panel parentPanel;
 
-        public PrintingCenter(User user, Panel panel)
+        public PrintingCenter(Models.User user, Panel parent)  // Changed from: public PrintingCenter(User user, Panel parent)
         {
             currentUser = user;
-            contentPanel = panel;
+            parentPanel = parent;
         }
 
         public void ShowPrintingCenter()
         {
-            contentPanel.Controls.Clear();
+            parentPanel.Controls.Clear();
 
             Label titleLabel = new Label
             {
@@ -43,7 +43,7 @@ namespace BarangayManagementSystem.Forms
             FlowLayoutPanel documentsFlow = new FlowLayoutPanel
             {
                 Location = new Point(10, 110),
-                Size = new Size(contentPanel.Width - 50, 500),
+                Size = new Size(parentPanel.Width - 50, 500),
                 FlowDirection = FlowDirection.TopDown,
                 WrapContents = false,
                 AutoScroll = true
@@ -65,14 +65,14 @@ namespace BarangayManagementSystem.Forms
                 documentsFlow.Controls.Add(docCard);
             }
 
-            contentPanel.Controls.AddRange(new Control[] { titleLabel, descLabel, documentsFlow });
+            parentPanel.Controls.AddRange(new Control[] { titleLabel, descLabel, documentsFlow });
         }
 
         private Panel CreateDocumentCard(string name, string icon, string description)
         {
             Panel card = new Panel
             {
-                Size = new Size(contentPanel.Width - 80, 100),
+                Size = new Size(parentPanel.Width - 80, 100),
                 BackColor = Color.White,
                 BorderStyle = BorderStyle.FixedSingle,
                 Margin = new Padding(5),

@@ -237,7 +237,7 @@ namespace BarangayManagementSystem.Controls
 
                 Label dateLabel = new Label
                 {
-                    Text = $"Published on {news.PublishDate:MMMM dd, yyyy} • {news.ViewCount} views",
+                    Text = $"Published on {news.PublishedDate:MMMM dd, yyyy} • {news.ViewCount} views",
                     Font = new Font("Segoe UI", 11F),
                     ForeColor = Color.FromArgb(108, 117, 125),
                     Location = new Point(40, titleLabel.Bottom + 10),
