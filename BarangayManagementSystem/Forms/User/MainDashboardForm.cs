@@ -5,6 +5,7 @@ using System.Windows.Forms;
 using BarangayManagementSystem.Data;
 using BarangayManagementSystem.Models;
 using BarangayManagementSystem.Controls;
+using BarangayManagementSystem.Forms; // for PrintingCenterControl
 
 namespace BarangayManagementSystem.Forms.User
 {
@@ -25,29 +26,34 @@ namespace BarangayManagementSystem.Forms.User
         {
             lblUserName.Text = currentUser.FullName;
             btnAvatar.Text = currentUser.FullName.Substring(0, 1).ToUpper();
-            
-            // Set initial active button
+
             activeButton = btnDashboard;
-            
-            // Load dashboard by default
             LoadChildForm(new DashboardOverviewForm(currentUser));
-            
-            // Start notification timer
-            notificationRefreshTimer = new Timer();
-            notificationRefreshTimer.Interval = 30000; // 30 seconds
+            StartNotificationTimer();
+            UpdateNotificationCount();
+
+            EnhancedDatabaseHelper.LogActivity(currentUser.Id, "Login", "Dashboard", "User logged in");
+        }
+
+        private void StartNotificationTimer()
+        {
+            notificationRefreshTimer = new Timer { Interval = 30000 };
             notificationRefreshTimer.Tick += (s, ev) => UpdateNotificationCount();
             notificationRefreshTimer.Start();
-            
-            UpdateNotificationCount();
-            
-            EnhancedDatabaseHelper.LogActivity(currentUser.Id, "Login", "Dashboard", "User logged in");
         }
 
         private void LoadChildForm(Form childForm)
         {
+            // Unhook old dashboard event before disposing
+            if (activeChildForm is DashboardOverviewForm oldDash)
+                oldDash.NavigationRequested -= DashboardForm_NavigationRequested;
+
             if (activeChildForm != null)
+            {
                 activeChildForm.Close();
-                
+                activeChildForm.Dispose();
+            }
+
             activeChildForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
@@ -55,45 +61,64 @@ namespace BarangayManagementSystem.Forms.User
             contentPanel.Controls.Clear();
             contentPanel.Controls.Add(childForm);
             contentPanel.Tag = childForm;
-            childForm.BringToFront();
             childForm.Show();
 
-            // Subscribe to navigation events if it's DashboardOverviewForm
-            if (childForm is DashboardOverviewForm dashboardForm)
-            {
-                dashboardForm.NavigationRequested += DashboardForm_NavigationRequested;
-            }
+            if (childForm is DashboardOverviewForm newDash)
+                newDash.NavigationRequested += DashboardForm_NavigationRequested;
         }
 
         private void DashboardForm_NavigationRequested(object sender, string section)
         {
+            Navigate(section);
+        }
+
+        private void Navigate(string section)
+        {
             switch (section)
             {
-                case "SubmitRequest":
-                    BtnSubmitRequest_Click(null, null);
-                    break;
-                case "FileReport":
-                    BtnFileReport_Click(null, null);
-                    break;
-                case "MyRequests":
-                    BtnMyRequests_Click(null, null);
+                case "Dashboard":
+                    ActivateButton(btnDashboard);
+                    LoadChildForm(new DashboardOverviewForm(currentUser));
                     break;
                 case "News":
-                    BtnNews_Click(null, null);
+                    ActivateButton(btnNews);
+                    LoadChildForm(new NewsViewForm(currentUser));
+                    break;
+                case "Officials":
+                    ActivateButton(btnOfficials);
+                    LoadChildForm(new OfficialsViewForm(currentUser));
+                    break;
+                case "SubmitRequest":
+                    ActivateButton(btnSubmitRequest);
+                    LoadChildForm(new SubmitRequestForm(currentUser));
+                    break;
+                case "MyRequests":
+                    ActivateButton(btnMyRequests);
+                    LoadChildForm(new MyRequestsForm(currentUser));
+                    break;
+                case "FileReport":
+                    ActivateButton(btnFileReport);
+                    LoadChildForm(new FileReportForm(currentUser));
+                    break;
+                case "MyReports":
+                    ActivateButton(btnMyReports);
+                    LoadChildForm(new MyReportsForm(currentUser));
+                    break;
+                case "Printing":
+                    ActivateButton(btnPrinting);
+                    LoadChildForm(new PrintingCenterForm(currentUser)); // fixed: use child form loading
                     break;
             }
         }
 
         private void ActivateButton(Button button)
         {
-            // Reset previous button
             if (activeButton != null)
             {
                 activeButton.BackColor = Color.Transparent;
                 activeButton.ForeColor = Color.FromArgb(222, 226, 230);
             }
-            
-            // Set new active button
+
             activeButton = button;
             button.BackColor = Color.FromArgb(0, 123, 255);
             button.ForeColor = Color.White;
@@ -109,61 +134,18 @@ namespace BarangayManagementSystem.Forms.User
             catch { }
         }
 
-        // Event Handlers
-        private void BtnDashboard_Click(object sender, EventArgs e)
-        {
-            ActivateButton(btnDashboard);
-            LoadChildForm(new DashboardOverviewForm(currentUser));
-        }
-
-        private void BtnNews_Click(object sender, EventArgs e)
-        {
-            ActivateButton(btnNews);
-            LoadChildForm(new NewsViewForm(currentUser));
-        }
-
-        private void BtnOfficials_Click(object sender, EventArgs e)
-        {
-            ActivateButton(btnOfficials);
-            LoadChildForm(new OfficialsViewForm(currentUser));
-        }
-
-        private void BtnSubmitRequest_Click(object sender, EventArgs e)
-        {
-            ActivateButton(btnSubmitRequest);
-            LoadChildForm(new SubmitRequestForm(currentUser));
-        }
-
-        private void BtnMyRequests_Click(object sender, EventArgs e)
-        {
-            ActivateButton(btnMyRequests);
-            LoadChildForm(new MyRequestsForm(currentUser));
-        }
-
-        private void BtnFileReport_Click(object sender, EventArgs e)
-        {
-            ActivateButton(btnFileReport);
-            LoadChildForm(new FileReportForm(currentUser));
-        }
-
-        private void BtnMyReports_Click(object sender, EventArgs e)
-        {
-            ActivateButton(btnMyReports);
-            LoadChildForm(new MyReportsForm(currentUser));
-        }
-
-        private void BtnPrinting_Click(object sender, EventArgs e)
-        {
-            ActivateButton(btnPrinting);
-            // Load printing center control
-            contentPanel.Controls.Clear();
-            PrintingCenter printingCenter = new PrintingCenter(currentUser, contentPanel);
-            printingCenter.ShowPrintingCenter();
-        }
+        // Sidebar button handlers now delegate to Navigate for consistency
+        private void BtnDashboard_Click(object sender, EventArgs e) => Navigate("Dashboard");
+        private void BtnNews_Click(object sender, EventArgs e) => Navigate("News");
+        private void BtnOfficials_Click(object sender, EventArgs e) => Navigate("Officials");
+        private void BtnSubmitRequest_Click(object sender, EventArgs e) => Navigate("SubmitRequest");
+        private void BtnMyRequests_Click(object sender, EventArgs e) => Navigate("MyRequests");
+        private void BtnFileReport_Click(object sender, EventArgs e) => Navigate("FileReport");
+        private void BtnMyReports_Click(object sender, EventArgs e) => Navigate("MyReports");
+        private void BtnPrinting_Click(object sender, EventArgs e) => Navigate("Printing");
 
         private void BtnNotification_Click(object sender, EventArgs e)
         {
-            // Show notification panel
             NotificationPanel notifPanel = new NotificationPanel(currentUser);
             notifPanel.ShowNotifications();
             UpdateNotificationCount();
@@ -171,51 +153,36 @@ namespace BarangayManagementSystem.Forms.User
 
         private void BtnAvatar_Click(object sender, EventArgs e)
         {
-            UserProfileForm profileForm = new UserProfileForm(currentUser);
-            profileForm.ShowDialog();
+            using (UserProfileForm profileForm = new UserProfileForm(currentUser))
+            {
+                profileForm.ShowDialog(this);
+            }
         }
 
-        private void BtnMinimize_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void BtnClose_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+        private void BtnMinimize_Click(object sender, EventArgs e) => WindowState = FormWindowState.Minimized;
+        private void BtnClose_Click(object sender, EventArgs e) => Application.Exit();
 
         private void BtnLogout_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Are you sure you want to logout?",
-                "Confirm Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            if (result == DialogResult.Yes)
+            if (MessageBox.Show("Are you sure you want to logout?",
+                    "Confirm Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 EnhancedDatabaseHelper.LogActivity(currentUser.Id, "Logout", "Dashboard", "User logged out");
-                
-                if (notificationRefreshTimer != null)
-                {
-                    notificationRefreshTimer.Stop();
-                    notificationRefreshTimer.Dispose();
-                }
-                
-                // Just close - the FormClosed event in LoginForm will show the original login form
-                this.Close();
+                notificationRefreshTimer?.Stop();
+                notificationRefreshTimer?.Dispose();
+                Close();
             }
         }
 
         private void SidebarButton_MouseEnter(object sender, EventArgs e)
         {
-            Button btn = sender as Button;
-            if (btn != activeButton)
+            if (sender is Button btn && btn != activeButton)
                 btn.BackColor = Color.FromArgb(52, 58, 64);
         }
 
         private void SidebarButton_MouseLeave(object sender, EventArgs e)
         {
-            Button btn = sender as Button;
-            if (btn != activeButton)
+            if (sender is Button btn && btn != activeButton)
                 btn.BackColor = Color.Transparent;
         }
 
@@ -240,11 +207,11 @@ namespace BarangayManagementSystem.Forms.User
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
             base.OnFormClosing(e);
-            if (notificationRefreshTimer != null)
-            {
-                notificationRefreshTimer.Stop();
-                notificationRefreshTimer.Dispose();
-            }
+            notificationRefreshTimer?.Stop();
+            notificationRefreshTimer?.Dispose();
+
+            if (activeChildForm is DashboardOverviewForm dash)
+                dash.NavigationRequested -= DashboardForm_NavigationRequested;
         }
     }
 }
